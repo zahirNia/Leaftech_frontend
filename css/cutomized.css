@@ -170,5 +170,48 @@ nav ul li a:hover {
 }
 
 /* body - header - title */
+h1 {
+  color: #2F2F2F;
+  font-family: "Pulp Display";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 38px;
+}
+
+.header_title h1 {
+  height: 106px;
+  width: 580px;
+}
+
+p {
+  color: #383838;
+  font-family: "Pulp Display";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.header_title p {
+  height: 132px;
+  width: 550px;
+}
+
+.header_title button {
+  height: 53px;
+  width: 225px;
+  border-radius: 4px;
+  background-color: #313131;
+  color: #FFFFFF;
+  font-family: "Pulp Display";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+}
+
+/* body - header - partners */
 
 
