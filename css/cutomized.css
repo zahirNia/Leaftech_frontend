@@ -213,5 +213,31 @@ p {
 }
 
 /* body - header - partners */
+.header_partners ul {
+  list-style-type: none;
+  padding: 2rem;
+  margin: 0;
+  overflow: hidden;
+}
 
+.header_partners ul li {
+  float: left;
+}
+
+.header_partners ul li a{
+  display: block;
+  padding: 1rem;
+  margin: 0;
+}
+/* Comment: Change the link color to #111 (black) on hover */
+.header_partners ul li a:hover {
+  background-color: lightblue;
+}
+
+.header_partners ul li a img {
+  max-height: 2rem;
+  max-width: 6rem;
+}
+
+/* body - main -  */
 
