@@ -7,8 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest"> <!-- why this?? -->
+  <link rel="apple-touch-icon" href="icon.png"> <!-- why this?? -->
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -21,27 +21,30 @@
 
 <body>
 
-  <div class="body-grid-container">
-
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
+  <div class="body-grid-container">
+     <!-- Add your site or application content here -->
     <header>
       <div class="header-grid-container">
         <div class="header_logo_nav">
-          <!-- Leaftech Logo -->
-          <img src="img/logo.jpeg/png" alt="Leaftech's Logo" width="90" height="30">
-
-          <!-- navigation bar -->
-          <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Services</a>
-            <a href="#">The Lab</a>
-            <a href="#">Contact us</a>
-            <a href="#">EN/DE</a>
-          </nav>
+          <div class="logo">
+            <!-- Leaftech Logo -->
+            <img src="img/logo.jpeg/png" alt="Leaftech's Logo" width="90" height="30">
+          </div>
+          <div class="nav">
+            <!-- navigation bar -->
+            <nav>
+              <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="lab.html">The Lab</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
         <div class="header_title">
@@ -140,26 +143,29 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <h1>Are you interested? Would you like to become a partner</h1>
-      <p>If you have interest, or would like to receive more information feel free to contact us.</p>
-      <button type="button">Get in touch</button>
+    <footer>
+      <div class="footer-grid-container">
+        <h1>Are you interested? Would you like to become a partner</h1>
+        <p>If you have interest, or would like to receive more information feel free to contact us.</p>
+        <button type="button">Get in touch</button>
+      </div>
     </footer>
 
-    <!-- JS-->
-    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </div>
+
+  <!-- JS-->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 
 </body>
 
