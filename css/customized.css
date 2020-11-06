@@ -240,4 +240,34 @@ p {
 }
 
 /* body - main -  */
+.main-grid-container img {
+  object-fit: cover;
+  max-height: 310px;
+  max-width: 470px;
+}
 
+h2 {
+  height: 52px;
+  width: 279px;
+  color: #352917;
+  font-family: "Pulp Display";
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.main-grid-container .the_what h1 {
+  text-align: center;
+}
+
+.main-grid-container .the_what p {
+  height: 22px;
+  width: 840px;
+  color: #352917;
+  font-family: "Pulp Display";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
