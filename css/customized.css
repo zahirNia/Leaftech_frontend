@@ -4,10 +4,9 @@
 .body-grid-container{
   display: grid;
   grid-template-rows: 6fr 26fr 2fr;
-  margin: 0;
+  margin: 0 auto;
+  width: 80%;
   padding: 2rem;
-  width: 80vw;
-  alignment: center;
 }
 
 /* Comment: setting the divs */
@@ -115,11 +114,19 @@ footer{
   grid-column: 1 / 2;
 }
 
-.footer-grid-container{
+.footer-grid-container {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-text {
+  grid-column: 1 / 2;
+}
+
+.footer-button {
+  grid-column: 2 / 3;
 }
 
 /* body - header - logo */
@@ -136,7 +143,7 @@ footer{
 }
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
 }
@@ -193,12 +200,7 @@ p {
   line-height: 32px;
 }
 
-.header_title p {
-  height: 132px;
-  width: 550px;
-}
-
-.header_title button {
+button {
   height: 53px;
   width: 225px;
   border-radius: 4px;
@@ -210,6 +212,10 @@ p {
   letter-spacing: 0;
   line-height: 19px;
   text-align: center;
+}
+
+.header_title p {
+  width: 45rem;
 }
 
 /* body - header - partners */
@@ -240,15 +246,7 @@ p {
 }
 
 /* body - main -  */
-.main-grid-container img {
-  object-fit: cover;
-  max-height: 310px;
-  max-width: 470px;
-}
-
 h2 {
-  height: 52px;
-  width: 279px;
   color: #352917;
   font-family: "Pulp Display";
   font-size: 24px;
@@ -257,13 +255,23 @@ h2 {
   line-height: 26px;
 }
 
+.main-grid-container p {
+  width: 30rem;
+}
+
+.main-grid-container img {
+  object-fit: cover;
+  max-height: 310px;
+  max-width: 470px;
+  /*alignment: center;*/
+}
+
 .main-grid-container .the_what h1 {
   text-align: center;
 }
 
 .main-grid-container .the_what p {
-  height: 22px;
-  width: 840px;
+  width: auto;
   color: #352917;
   font-family: "Pulp Display";
   font-size: 18px;
