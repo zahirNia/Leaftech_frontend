@@ -20,7 +20,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -28,6 +28,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sasan Zahirnia\Desktop\my-github\Leaftech_frontend\css" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -59,6 +64,7 @@
       <workItem from="1604502527958" duration="1889000" />
       <workItem from="1604586390252" duration="8243000" />
       <workItem from="1604662185272" duration="9593000" />
+      <workItem from="1604927109115" duration="2021000" />
     </task>
     <servers />
   </component>
