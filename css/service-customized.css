@@ -3,7 +3,7 @@
 /* Comment: forming the body grid container */
 .body-grid-container{
   display: grid;
-  grid-template-rows: 6fr 26fr 2fr;
+  grid-template-rows: 3fr 22fr 2fr;
   margin: 0 auto;
   width: 80%;
   padding: 2rem;
@@ -12,6 +12,7 @@
 /* Comment: setting the divs */
 header{
   grid-row: 1 / 2;
+  background-color: lightgrey;
 }
 
 main{
@@ -27,93 +28,119 @@ footer{
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 2fr;
 }
 
-.header_logo_nav {
+.header-logo-nav {
   grid-row: 1 / 2;
 }
 
-.header_title {
+.header-title {
   grid-row: 2 / 3;
 }
 
-.header_partners {
-  grid-row: 3 / 4;
-}
-
-
-/* Comment: forming the main grid container */
+/* Forming the main grid container*/
 .main-grid-container{
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: repeat(3, 4fr) 2fr repeat(3, 4fr);
+  grid-template-rows: 1fr repeat(2, 2fr) 1fr 1fr repeat(2, 2fr) 1fr 1fr 2fr 3fr 1fr 2fr;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.benefit_cost_img {
+/* Forming the main grid container, shading automation */
+.shading-automation-title {
   grid-row: 1 / 2;
-  grid-column: 1 / 2;
-}
-
-.benefit_cost_text {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-}
-.benefit_health_img {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-}
-
-.benefit_health_text {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-}
-
-.benefit_prestige_img {
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
-}
-.benefit_prestige_text {
-  grid-row: 3 / 4;
-  grid-column: 2 / 3;
-}
-
-.the_what {
-  grid-row: 4 / 5;
   grid-column: 1 / 3;
 }
 
-.the_how_step_1_img {
-  grid-row: 5 / 6;
+.unique-window-img {
+  grid-row: 2 / 3;
   grid-column: 2 / 3;
 }
 
-.the_how_step_1_text {
-  grid-row: 5 / 6;
+.unique-window-text {
+  grid-row: 2 / 3;
   grid-column: 1 / 2;
 }
 
-.the_how_step_2_img {
+.real-shading-conditions-img {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.real-shading-conditions-text {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+.case-study-shading {
+  grid-row: 5 / 6;
+  grid-column: 1 / 3;
+}
+
+/* Forming the main grid container, single room*/
+.single-room-title {
   grid-row: 6 / 7;
+  grid-column: 1 / 3;
+}
+
+.room-for-anticipation-text {
+  grid-row: 7 / 8;
+  grid-column: 2 / 3;
+}
+
+.room-for-anticipation-img {
+  grid-row: 7 / 8;
+  grid-column: 1 / 2;
+}
+
+.get-the-most {
+  grid-row: 8 / 9;
   grid-column: 1 / 2;}
 
-.the_how_step_2_text {
-  grid-row: 6 / 7;
+.combine-with-shading-service {
+  grid-row: 8 / 9;
   grid-column: 2 / 3;
 }
 
-.the_how_step_3_img {
-  grid-row: 7 / 8;
-  grid-column: 2 / 3;
+.case-study-room {
+  grid-row: 9 / 10;
+  grid-column: 1 / 3;
 }
 
-.the_how_step_3_text {
-  grid-row: 7 / 8;
+/* Forming the main grid container, building forecast*/
+.building-energy-title {
+  grid-row: 10 / 11;
+  grid-column: 1 / 3;
+}
+
+.building-energy-img {
+  grid-row: 11 / 12;
+  grid-column: 1 / 3;
+}
+
+.potential-of-predictions {
+  grid-row: 12 / 13;
   grid-column: 1 / 2;
 }
+.the-more-the-better {
+  grid-row: 12 / 13;
+  grid-column: 2 / 3;
+}
 
+.case-study-building {
+  grid-row: 13 / 14;
+  grid-column: 1 / 3;
+}
+
+/* Forming the main grid container, traction*/
+.traction {
+  grid-row: 14 / 15;
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+/* Forming the footer*/
 .footer-grid-container {
   width: 100%;
   height: 100%;
@@ -186,11 +213,6 @@ h1 {
   line-height: 38px;
 }
 
-.header_title h1 {
-  height: 106px;
-  width: 580px;
-}
-
 p {
   color: #383838;
   font-family: "Pulp Display";
@@ -218,33 +240,6 @@ button {
   width: 45rem;
 }
 
-/* body - header - partners */
-.header_partners ul {
-  list-style-type: none;
-  padding: 2rem;
-  margin: 0;
-  overflow: hidden;
-}
-
-.header_partners ul li {
-  float: left;
-}
-
-.header_partners ul li a{
-  display: block;
-  padding: 1rem;
-  margin: 0;
-}
-/* Comment: Change the link color to #111 (black) on hover */
-.header_partners ul li a:hover {
-  background-color: lightblue;
-}
-
-.header_partners ul li a img {
-  max-height: 2rem;
-  max-width: 6rem;
-}
-
 /* body - main -  */
 h2 {
   color: #352917;
@@ -256,7 +251,7 @@ h2 {
 }
 
 .main-grid-container p {
-  width: 30rem;
+  max-width: 30rem;
 }
 
 .main-grid-container img {
@@ -266,16 +261,19 @@ h2 {
   /*alignment: center;*/
 }
 
-.main-grid-container .the_what h1 {
+shading-automation-title, .single-room-title, .building-energy-title h1 {
   text-align: center;
 }
 
-.main-grid-container .the_what p {
-  width: auto;
-  color: #352917;
-  font-family: "Pulp Display";
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: 22px;
+shading-automation-title, .single-room-title, .building-energy-title p {
   text-align: center;
+}
+
+
+.case-study-shading, .case-study-room, .case-study-building h3 {
+  text-align: center;
+}
+
+.case-study-shading, .case-study-room, .case-study-building button {
+  justify-self: center;
 }
