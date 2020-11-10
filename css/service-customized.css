@@ -5,7 +5,7 @@
   display: grid;
   grid-template-rows: 3fr 22fr 2fr;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   padding: 2rem;
 }
 
@@ -165,7 +165,7 @@ footer{
 .logo {
   grid-column: 1 / 2;
 }
-.nav {
+.header-nav {
   grid-column: 2 / 3;
 }
 nav ul {
@@ -183,7 +183,7 @@ nav ul li a {
 }
 nav ul li a {
   color: #352917;
-  font-family: "Pulp Display";
+  font-family: "Nunito";
   font-weight: bold;
   text-decoration: none;
 }
@@ -206,7 +206,7 @@ nav ul li a:hover {
 /* body - header - title */
 h1 {
   color: #2F2F2F;
-  font-family: "Pulp Display";
+  font-family: "Nunito";
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0;
@@ -215,7 +215,7 @@ h1 {
 
 p {
   color: #383838;
-  font-family: "Pulp Display";
+  font-family: "Nunito";
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0;
@@ -228,7 +228,7 @@ button {
   border-radius: 4px;
   background-color: #313131;
   color: #FFFFFF;
-  font-family: "Pulp Display";
+  font-family: "Nunito";
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0;
@@ -243,7 +243,7 @@ button {
 /* body - main -  */
 h2 {
   color: #352917;
-  font-family: "Pulp Display";
+  font-family: "Nunito";
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0;
