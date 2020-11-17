@@ -3,7 +3,9 @@
 /* Comment: forming the body grid container */
 .body-grid-container{
   display: grid;
-  grid-template-rows: 6fr 26fr 2fr;
+  grid-template-rows: 4fr 18fr 4fr;
+  grid-template-areas:
+  "header_container main_container footer_container";
   margin: 0 auto;
   width: 60%;
   padding: 2rem;
@@ -11,15 +13,15 @@
 
 /* Comment: setting the divs */
 header{
-  grid-row: 1 / 2;
+  grid-row: header_container;
 }
 
 main{
-  grid-row: 2 / 3;
+  grid-area: main_container;
 }
 
 footer{
-  grid-row: 3 / 4;
+  grid-row: footer_container;
 }
 
 /* Comment: forming the header grid container */
