@@ -1,33 +1,5 @@
 /* HTML structure with CSS grid */
 
-/* Comment: forming the body grid container
-.body-grid-container{
-  display: grid;
-  grid-template-rows: 4fr 18fr 4fr;
-  grid-template-areas:
-  "header_container"
-  "main_container"
-  "footer_container";
-  margin: 0 auto;
-  width: 60%;
-  padding: 2rem;
-}
- */
-
-/* Comment: setting the divs
-header{
-  grid-row: header_container;
-}
-
-main{
-  grid-area: main_container;
-}
-
-footer{
-  grid-row: footer_container;
-}
-*/
-
 /* header grid container */
 header {
   display: grid;
@@ -46,18 +18,70 @@ main {
   grid-template-rows: 1fr 2fr 2fr 1fr repeat(6, 2fr);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  ". main-partners ."
-  "main-cost-img main-health-img main-prestige-img"
-  "main-cost-txt main-health-txt main-prestige-txt"
-  "main-the-what main-the-what main-the-what"
-  ". main-step-1-img ."
-  ". main-step-1-txt ."
-  ". main-step-2-img ."
-  ". main-step-2-txt ."
-  ". main-step-3-img ."
-  ". main-step-3-txt .";
+    "main-partners main-partners main-partners"
+    "main-cost-img main-health-img main-prestige-img"
+    "main-cost-txt main-health-txt main-prestige-txt"
+    "main-the-what main-the-what main-the-what"
+    ". main-step-1-img ."
+    ". main-step-1-txt ."
+    ". main-step-2-img ."
+    ". main-step-2-txt ."
+    ". main-step-3-img ."
+    ". main-step-3-txt .";
   width: 100%;
   height: 100%;
+}
+
+.main-partners{
+  grid-area: main-partners;
+}
+
+.main-cost-img{
+  grid-area: main-cost-img;
+}
+
+.main-health-img{
+  grid-area: main-health-img;
+}
+
+.main-prestige-img{
+  grid-area: main-prestige-img;
+}
+
+.main-cost-txt {
+  grid-area: main-cost-txt;
+}
+
+.main-health-txt {
+  grid-area: main-health-txt;
+}
+
+.main-prestige-txt{
+  grid-area: main-prestige-txt;
+}
+
+.main-step-1-img {
+  grid-area: main-step-1-img;
+}
+
+.main-step-2-img {
+  grid-area: main-step-2-img;
+}
+
+.main-step-3-img {
+  grid-area: main-step-3-img;
+}
+
+.main-step-1-txt {
+  grid-area: main-step-1-txt;
+}
+
+.main-step-2-txt {
+  grid-area: main-step-2-txt;
+}
+
+.main-step-3-txt {
+  grid-area: main-step-3-txt;
 }
 
 /* footer grid container */
@@ -67,11 +91,38 @@ footer {
   grid-template-columns: repeat(10, 1fr);
   grid-template-areas:
     "footer-contact-img footer-contact-img footer-contact-img footer-contact-img footer-contact-img footer-contact-txt footer-contact-txt footer-contact-txt footer-contact-txt footer-contact-txt"
-    ". footer-logo footer-home footer-services footer-the-lab . . . footer-social-media .";
+    ". footer-logo footer-home footer-services footer-the-lab . . . footer-social-media footer-social-media";
   width: 100%;
   height: 100%;
 }
 
+.footer-contact-img {
+  grid-area: footer-contact-img;
+}
+
+.footer-contact-txt {
+  grid-area: footer-contact-txt;
+}
+
+.footer-logo {
+  grid-area: footer-logo;
+}
+
+.footer-services {
+  grid-area: footer-services;
+}
+
+.footer-home {
+  grid-area: footer-home;
+}
+
+.footer-the-lab {
+  grid-area: footer-the-lab;
+}
+
+.footer-social-media {
+  grid-area: footer-social-media;
+}
 
 nav ul {
   list-style-type: none;
