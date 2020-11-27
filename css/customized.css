@@ -31,6 +31,36 @@
   grid-area: navigator;
 }
 
+.navigator nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigator nav ul li {
+  float: left
+}
+.navigator nav ul li a {
+  display: block;
+  padding: 1rem;
+  color: #352917;
+  font-family: "Nunito";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0;
+  margin: 0;
+  height: 14px;
+}
+
+/* Comment: Change the link color to #111 (black) on hover */
+nav ul li a:hover {
+  background-color: lightgray;
+}
+
+
 .title_img{
   grid-area: title_img;
 }
@@ -39,8 +69,21 @@
   grid-area: title_txt;
 }
 
+h1 {
+  color: #2F2F2F;
+  font-family: "Nunito";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 38px;
+}
+
 .partners{
   grid-area: partners;
+}
+
+.partners img {
+  height: 3rem;
 }
 
 .what{
@@ -107,51 +150,18 @@
   grid-area: footer;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-}
-nav ul li {
-  float: left
-}
-nav ul li a {
-  display: block;
-  padding: 1rem;
-}
-nav ul li a {
-  color: #352917;
-  font-family: "Nunito";
-  font-weight: bold;
-  text-decoration: none;
-}
-nav ul li a {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0;
-  margin: 0;
-  height: 14px;
+.footer img {
+  height: 3rem;
 }
 
-/* Comment: Change the link color to #111 (black) on hover */
-nav ul li a:hover {
-  background-color: lightgray;
-}
-/* Comment: The active page */
+
 .active {
   background-color: darkgray;
 }
 
-/* body - header - title */
-h1 {
-  color: #2F2F2F;
-  font-family: "Nunito";
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 38px;
-}
+
+
+
 
 
 
