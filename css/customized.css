@@ -20,11 +20,12 @@
                 /1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-flow: column;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .logo{
   grid-area: logo;
+
+  padding: 3rem 3rem 3rem 6rem;
 }
 
 .navigator{
@@ -39,43 +40,57 @@
 }
 
 .navigator nav ul li {
-  float: left
+  float: left;
 }
+
 .navigator nav ul li a {
   display: block;
-  padding: 1rem;
   color: #352917;
+
   font-family: "Nunito";
+  font-size: 12px;
   font-weight: bold;
   text-decoration: none;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0;
-  margin: 0;
-  height: 14px;
-}
 
-/* Comment: Change the link color to #111 (black) on hover */
-nav ul li a:hover {
-  background-color: lightgray;
+  padding: 3rem 3rem 3rem 0rem;
 }
-
 
 .title_img{
   grid-area: title_img;
+  justify-self: center;
 }
 
 .title_txt{
   grid-area: title_txt;
+  justify-self: start;
+  align-self: center;
 }
 
 h1 {
-  color: #2F2F2F;
-  font-family: "Nunito";
+  font-family: Exo;
+  color: #263238;
   font-size: 32px;
   font-weight: bold;
-  letter-spacing: 0;
-  line-height: 38px;
+}
+
+p {
+  font-family: "Nunito Sans";
+  color: #778AA3;
+  font-size: 14px;
+}
+
+button {
+  height: 44px;
+  width: 180px;
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  text-align: center;
+  background-color: #3087DF;
+  /*
+  font-weight: 600;
+  box-shadow: 0 2px 9px 0 rgba(0,135,230,0.6);
+   */
 }
 
 .partners{
@@ -152,11 +167,6 @@ h1 {
 
 .footer img {
   height: 3rem;
-}
-
-
-.active {
-  background-color: darkgray;
 }
 
 
