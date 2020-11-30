@@ -8,23 +8,15 @@
                 "partners partners partners partners partners partners" auto
                 "benefit1_img benefit1_img benefit2_img benefit2_img benefit3_img benefit3_img" auto
                 "benefit1_txt benefit1_txt benefit2_txt benefit2_txt benefit3_txt benefit3_txt" auto
-                "what what what what what what" auto
-                "step1_img step1_img step1_img step1_img step1_img step1_img" auto
-                "step1_txt step1_txt step1_txt step1_txt step1_txt step1_txt" auto
-                "step2_img step2_img step2_img step2_img step2_img step2_img" auto
-                "step2_txt step2_txt step2_txt step2_txt step2_txt step2_txt" auto
-                "step3_img step3_img step3_img step3_img step3_img step3_img" auto
-                "step3_txt step3_txt step3_txt step3_txt step3_txt step3_txt" auto
-                "contact contact contact contact contact contact" 3fr
+                "steps steps steps steps steps steps" auto
+                "contact contact contact contact contact contact" auto
                 "footer footer footer footer footer footer" auto
                 /1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-flow: column;
-  margin: 0 auto;
+
 }
 
 .logo{
   grid-area: logo;
-
   padding: 3rem 3rem 3rem 6rem;
 }
 
@@ -32,26 +24,23 @@
   grid-area: navigator;
 }
 
-.navigator nav ul {
+ul {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  overflow: hidden;
 }
 
-.navigator nav ul li {
+ul li {
   float: left;
 }
 
 .navigator nav ul li a {
   display: block;
   color: #352917;
-
   font-family: "Nunito";
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
-
   padding: 3rem 3rem 3rem 0rem;
 }
 
@@ -97,64 +86,71 @@ button {
   grid-area: partners;
 }
 
+.partners ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.partners ul li {
+  float: left;
+}
+
 .partners img {
-  height: 3rem;
-}
+  display: block;
+  opacity: 0.7;
+  background-color: #FFFFFF;
+  height: 25px;
+  padding: 3rem 3rem 3rem 3rem;
+  }
 
-.what{
-  grid-area: what;
-}
-
-.partners{
-  grid-area: partners;
-}
+#starting-partner {
+  display: block;
+  opacity: 0.7;
+  background-color: #FFFFFF;
+  height: 25px;
+  padding: 3rem 3rem 3rem 6rem;
+  }
 
 .benefit1_img {
   grid-area: benefit1_img;
+  padding: 0rem 6rem;
 }
 
 .benefit2_img {
   grid-area: benefit2_img;
+  padding: 0rem 3rem;
 }
 
 .benefit3_img {
   grid-area: benefit3_img;
+  padding: 0rem 3rem;
 }
 
 .benefit1_txt {
   grid-area: benefit1_txt;
+  justify-self: center;
+  padding: 0rem 6rem;
 }
 
 .benefit2_txt {
   grid-area: benefit2_txt;
+  justify-self: center;
+  padding: 0rem 3rem;
 }
 
 .benefit3_txt {
   grid-area: benefit3_txt;
+  justify-self: center;
+  padding: 0rem 3rem;
 }
 
-.step1_img{
-  grid-area: step1_img;
-}
 
-.step2_img{
-  grid-area: step2_img;
-}
-
-.step3_img{
-  grid-area: step3_img;
-}
-
-.step1_txt{
-  grid-area: step1_txt;
-}
-
-.step2_txt{
-  grid-area: step2_txt;
-}
-
-.step3_txt {
-  grid-area: step3_txt;
+.steps{
+  grid-area: steps;
+  justify-self: center;
+  text-align: center;
+  padding: 0rem 20rem;
 }
 
 .contact{
@@ -165,8 +161,12 @@ button {
   grid-area: footer;
 }
 
-.footer img {
-  height: 3rem;
+.footer ul li a img {
+  display: block;
+  opacity: 0.7;
+  background-color: #FFFFFF;
+  height: 25px;
+  padding: 3rem 3rem 3rem 3rem;
 }
 
 
