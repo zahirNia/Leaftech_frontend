@@ -5,14 +5,14 @@
   display: grid;
   grid-template:"logo logo logo navigator navigator navigator" auto
                 "title_img title_img title_img title_txt title_txt title_txt" auto
+                "horizontal_line_top horizontal_line_top horizontal_line_top horizontal_line_top horizontal_line_top horizontal_line_top" auto
                 "partners partners partners partners partners partners" auto
                 "benefit1_img benefit1_img benefit2_img benefit2_img benefit3_img benefit3_img" auto
                 "benefit1_txt benefit1_txt benefit2_txt benefit2_txt benefit3_txt benefit3_txt" auto
                 "steps steps steps steps steps steps" auto
-                "contact contact contact contact contact contact" auto
-                "footer footer footer footer footer footer" auto
+                "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
+                "footer_logo footer_logo footer_home footer_services footer_lab footer_socialmedia" auto
                 /1fr 1fr 1fr 1fr 1fr 1fr;
-
 }
 
 .logo{
@@ -47,12 +47,14 @@ ul li {
 .title_img{
   grid-area: title_img;
   justify-self: center;
+  border-bottom: 2px solid #ffa94d;
 }
 
 .title_txt{
   grid-area: title_txt;
   justify-self: start;
   align-self: center;
+  border-bottom: 2px solid #ffa94d;
 }
 
 h1 {
@@ -153,15 +155,41 @@ button {
   padding: 0rem 20rem;
 }
 
-.contact{
-  grid-area: contact;
+.contact_img {
+  grid-area: contact_img;
+  justify-self: center;
+  padding: 3rem 0rem;
+  /*background-color: #B8CBE4;
+  opacity: 0.05;*/
 }
 
-.footer {
-  grid-area: footer;
+.contact_txt {
+  grid-area: contact_txt;
+  padding: 3rem 0rem;
 }
 
-.footer ul li a img {
+.footer_logo {
+  grid-area: footer_logo;
+}
+
+.footer_home {
+  grid-area: footer_home;
+}
+
+.footer_services {
+  grid-area: footer_services;
+}
+
+.footer_lab {
+  grid-area: footer_lab;
+}
+
+.footer_socialmedia {
+  grid-area: footer_socialmedia;
+}
+
+
+.footer_logo img {
   display: block;
   opacity: 0.7;
   background-color: #FFFFFF;
