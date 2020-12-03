@@ -5,16 +5,11 @@
   display: grid;
   grid-template:"logo logo logo navigator navigator navigator" auto
                 "title_txt title_txt title_txt title_img title_img title_img" auto
-                "SA_title SA_title SA_title SA_title SA_title SA_title" auto
-                "SA_img SA_img SA_img SA_txt SA_txt SA_txt" auto
-                "SA_inbound SA_inbound SA_inbound SA_inbound SA_inbound SA_inbound" auto
-                "SRF_title SRF_title SRF_title SRF_title SRF_title SRF_title" auto
-                "SRF_img SRF_img SRF_img SRF_txt SRF_txt SRF_txt" auto
-                ". . . SRF_inbound SRF_inbound SRF_inbound" auto
-                "SRF_case_study SRF_case_study SRF_case_study SRF_case_study SRF_case_study SRF_case_study" auto
-                "BEF_title BEF_title BEF_title BEF_title BEF_title BEF_title" auto
-                "BEF_img BEF_img BEF_img BEF_txt BEF_txt BEF_txt" auto
-                "BEF_case_study BEF_case_study BEF_case_study BEF_case_study BEF_case_study BEF_case_study" auto
+                "IP_img IP_img IP_img IP_txt IP_txt IP_txt" auto
+                "CS_txt CS_txt CS_txt CS_img CS_img CS_img" auto
+                "WPA_img WPA_img WPA_img WPA_txt WPA_txt WPA_txt" auto
+                "PV_txt PV_txt PV_txt PV_img PV_img PV_img" auto
+                "FIA_img FIA_img FIA_img FIA_txt FIA_txt FIA_txt" auto
                 "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
                 "footer_logo footer_logo footer_home footer_services footer_lab footer_socialmedia" auto
                 /1fr 1fr 1fr 1fr 1fr 1fr;
@@ -88,99 +83,87 @@ button {
    */
 }
 
-.SA_title{
-  grid-area: SA_title;
-  justify-self: center;
-  text-align: center;
-}
-
-.SA_img {
-  grid-area: SA_img;
+/* innovation 1 */
+.IP_img {
+  grid-area: IP_img;
   justify-self: end;
 }
 
-.SA_txt {
-  grid-area: SA_txt;
+.IP_txt {
+  grid-area: IP_txt;
   padding: 0rem 6rem;
 }
 
-.SA_inbound {
-  grid-area: SA_inbound;
-  justify-self: center;
+.IP_txt a {
+  color: #3087DF;
+  font-family: "Nunito Sans";
+  font-size: 14px;
   text-align: center;
-  padding: 3rem 0rem;
+}
+/* innovation 2 */
+.CS_img {
+  grid-area: CS_img;
+  justify-self: end;
 }
 
-.SA_inbound a {
+.CS_txt {
+  grid-area: CS_txt;
+  padding: 0rem 6rem;
+}
+
+.CS_txt a {
+  color: #3087DF;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  text-align: center;
+}
+/* innovation 3 */
+WPA_img {
+  grid-area: WPA_img;
+  justify-self: end;
+}
+
+.WPA_txt {
+  grid-area: WPA_txt;
+  padding: 0rem 6rem;
+}
+
+.WPA_txt a {
   color: #3087DF;
   font-family: "Nunito Sans";
   font-size: 14px;
   text-align: center;
 }
 
-.SRF_title{
-  grid-area: SRF_title;
-  justify-self: center;
-  text-align: center;
-}
-
-.SRF_img {
-  grid-area: SRF_img;
+/* innovation 4 */
+.PV_img {
+  grid-area: PV_img;
   justify-self: end;
 }
 
-.SRF_txt {
-  grid-area: SRF_txt;
+.PV_txt {
+  grid-area: PV_txt;
   padding: 0rem 6rem;
 }
 
-.SRF_inbound {
-  grid-area: SRF_inbound;
-  justify-self: center;
-  padding: 3rem 8rem;
-  opacity: 0.25;
-  background-color: #CBE0F6;
-}
-
-.SRF_case_study {
-  grid-area: SRF_case_study;
-  justify-self: center;
-  text-align: center;
-  padding: 3rem 0rem;
-}
-
-.SRF_case_study a {
+.PV_txt a {
   color: #3087DF;
   font-family: "Nunito Sans";
   font-size: 14px;
   text-align: center;
 }
-
-
-.BEF_title{
-  grid-area: BEF_title;
-  justify-self: center;
-  text-align: center;
-}
-
-.BEF_img {
-  grid-area: BEF_img;
+/* innovation 5 */
+FIA_img {
+  grid-area: FIA_img;
   justify-self: end;
 }
 
-.BEF_txt {
-  grid-area: BEF_txt;
+.FIA_txt {
+  grid-area: FIA_txt;
   padding: 0rem 6rem;
 }
 
-.BEF_case_study {
-  grid-area: BEF_case_study;
-  justify-self: center;
-  text-align: center;
-  padding: 3rem 0rem;
-}
-
-.BEF_case_study a {
+.FIA_txt a {
   color: #3087DF;
   font-family: "Nunito Sans";
   font-size: 14px;

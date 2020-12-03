@@ -19,17 +19,17 @@
   padding: 3rem 3rem 3rem 6rem;
 }
 
-.navigator{
+.navigator {
   grid-area: navigator;
 }
 
-ul {
+.navigator ul {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
 
-ul li {
+.navigator ul li {
   float: left;
 }
 
@@ -81,21 +81,21 @@ button {
    */
 }
 
-.SA_title{
+.partners {
   grid-area: partners;
 }
 
-.SA_title ul {
+.partners  ul {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
 
-.SA_title ul li {
+.partners  ul li {
   float: left;
 }
 
-.SA_title img {
+.partners  img {
   display: block;
   opacity: 0.7;
   background-color: #FFFFFF;
