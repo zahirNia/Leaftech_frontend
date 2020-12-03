@@ -4,8 +4,9 @@
 .wrapper{
   display: grid;
   grid-template:"logo logo logo navigator navigator navigator" auto
-                "title_img title_img title_img title_txt title_txt title_txt" auto
-                "partners partners partners partners partners partners" auto
+                "title_txt title_txt title_txt title_img title_img title_img" auto
+                "SA-title SA-title SA-title SA-title SA-title SA-title" auto
+                "SA_img SA_img SA_img SA_txt SA_txt SA_txt" auto
                 "benefit1_img benefit1_img benefit2_img benefit2_img benefit3_img benefit3_img" auto
                 "benefit1_txt benefit1_txt benefit2_txt benefit2_txt benefit3_txt benefit3_txt" auto
                 "steps steps steps steps steps steps" auto
@@ -82,68 +83,18 @@ button {
 }
 
 .SA_title{
-  grid-area: partners;
-}
-
-.SA_title ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.SA_title ul li {
-  float: left;
-}
-
-.SA_title img {
-  display: block;
-  opacity: 0.7;
-  background-color: #FFFFFF;
-  height: 25px;
-  padding: 3rem 3rem 3rem 3rem;
-  }
-
-#starting-partner {
-  display: block;
-  opacity: 0.7;
-  background-color: #FFFFFF;
-  height: 25px;
-  padding: 3rem 3rem 3rem 6rem;
-  }
-
-.benefit1_img {
-  grid-area: benefit1_img;
-  padding: 0rem 6rem;
-}
-
-.benefit2_img {
-  grid-area: benefit2_img;
-  padding: 0rem 3rem;
-}
-
-.benefit3_img {
-  grid-area: benefit3_img;
-  padding: 0rem 3rem;
-}
-
-.benefit1_txt {
-  grid-area: benefit1_txt;
+  grid-area: SA-title;
   justify-self: center;
-  padding: 0rem 6rem;
 }
 
-.benefit2_txt {
-  grid-area: benefit2_txt;
-  justify-self: center;
-  padding: 0rem 3rem;
+
+.SA_img {
+  grid-area: SA_img;
 }
 
-.benefit3_txt {
-  grid-area: benefit3_txt;
-  justify-self: center;
-  padding: 0rem 3rem;
+.SA_txt {
+  grid-area: SA_txt;
 }
-
 
 .steps{
   grid-area: steps;
@@ -194,10 +145,3 @@ button {
   height: 25px;
   padding: 3rem 3rem 3rem 3rem;
 }
-
-
-
-
-
-
-
