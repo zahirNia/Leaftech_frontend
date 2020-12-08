@@ -47,10 +47,10 @@ ul li {
 
 .title_img{
   grid-area: title_img;
-  justify-self: center;
+  justify-self: start;
 }
 
-.title_txt{
+.title_txt {
   grid-area: title_txt;
   justify-self: center;
   align-self: center;
@@ -87,11 +87,12 @@ button {
 .IP_img {
   grid-area: IP_img;
   justify-self: end;
+  padding-right: 10rem;
 }
 
 .IP_txt {
   grid-area: IP_txt;
-  padding: 0rem 6rem;
+  padding-right: 10rem;
 }
 
 .IP_txt a {
@@ -103,12 +104,13 @@ button {
 /* innovation 2 */
 .CS_img {
   grid-area: CS_img;
-  justify-self: end;
+  justify-self: start;
+  padding-left: 10rem;
 }
 
 .CS_txt {
   grid-area: CS_txt;
-  padding: 0rem 6rem;
+  padding-left: 10rem;
 }
 
 .CS_txt a {
@@ -118,14 +120,15 @@ button {
   text-align: center;
 }
 /* innovation 3 */
-WPA_img {
+.WPA_img {
   grid-area: WPA_img;
   justify-self: end;
+  padding-right: 10rem;
 }
 
 .WPA_txt {
   grid-area: WPA_txt;
-  padding: 0rem 6rem;
+  padding-right: 10rem;
 }
 
 .WPA_txt a {
@@ -138,12 +141,13 @@ WPA_img {
 /* innovation 4 */
 .PV_img {
   grid-area: PV_img;
-  justify-self: end;
+  justify-self: start;
+  padding-left: 10rem;
 }
 
 .PV_txt {
   grid-area: PV_txt;
-  padding: 0rem 6rem;
+  padding-left: 10rem;
 }
 
 .PV_txt a {
@@ -153,14 +157,15 @@ WPA_img {
   text-align: center;
 }
 /* innovation 5 */
-FIA_img {
+.FIA_img {
   grid-area: FIA_img;
   justify-self: end;
+  padding-right: 10rem;
 }
 
 .FIA_txt {
   grid-area: FIA_txt;
-  padding: 0rem 6rem;
+  padding-right: 10rem;
 }
 
 .FIA_txt a {

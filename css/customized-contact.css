@@ -42,11 +42,17 @@ ul li {
 
 .title_img{
   grid-area: title_img;
-  justify-self: center;
+  justify-self: start;
 }
 
-.title_txt{
+.title_txt {
   grid-area: title_txt;
+  justify-self: center;
+  align-self: center;
+}
+
+.contact_txt {
+  grid-area: contact_txt;
   justify-self: center;
   align-self: center;
 }
