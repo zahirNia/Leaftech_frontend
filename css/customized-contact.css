@@ -1,0 +1,108 @@
+/* HTML structure with CSS grid */
+
+/* Comment: forming the body grid container */
+.wrapper{
+  display: grid;
+  grid-template:"logo logo logo navigator navigator navigator" auto
+                "title_txt title_txt title_txt title_img title_img title_img" auto
+                "contact_txt contact_txt contact_txt contact_txt contact_txt contact_txt" auto
+                "footer_logo footer_logo footer_home footer_services footer_lab footer_socialmedia" auto
+                /1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo{
+  grid-area: logo;
+  padding: 3rem 3rem 3rem 6rem;
+
+}
+
+.navigator{
+  grid-area: navigator;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li {
+  float: left;
+}
+
+.navigator nav ul li a {
+  display: block;
+  color: #352917;
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3rem 3rem 3rem 0rem;
+}
+
+.title_img{
+  grid-area: title_img;
+  justify-self: center;
+}
+
+.title_txt{
+  grid-area: title_txt;
+  justify-self: center;
+  align-self: center;
+}
+
+h1 {
+  font-family: Exo;
+  color: #263238;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Nunito Sans";
+  color: #778AA3;
+  font-size: 14px;
+}
+
+button {
+  height: 44px;
+  width: 180px;
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  text-align: center;
+  background-color: #3087DF;
+  /*
+  font-weight: 600;
+  box-shadow: 0 2px 9px 0 rgba(0,135,230,0.6);
+   */
+}
+
+.footer_logo {
+  grid-area: footer_logo;
+  align-self: start;
+}
+
+.footer_home {
+  grid-area: footer_home;
+}
+
+.footer_services {
+  grid-area: footer_services;
+}
+
+.footer_lab {
+  grid-area: footer_lab;
+}
+
+.footer_socialmedia {
+  grid-area: footer_socialmedia;
+}
+
+.footer_logo img {
+  display: block;
+  opacity: 0.7;
+  background-color: #FFFFFF;
+  height: 25px;
+  padding: 3rem 3rem 3rem 3rem;
+}
