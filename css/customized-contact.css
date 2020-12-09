@@ -5,6 +5,7 @@
   display: grid;
   grid-template:"logo logo logo navigator navigator navigator" auto
                 "title_txt title_txt title_txt title_img title_img title_img" auto
+                "breaking_line breaking_line breaking_line breaking_line breaking_line breaking_line" auto
                 "contact_txt contact_txt contact_txt contact_txt contact_txt contact_txt" auto
                 "footer_logo footer_logo footer_home footer_services footer_lab footer_socialmedia" auto
                 /1fr 1fr 1fr 1fr 1fr 1fr;
@@ -43,12 +44,19 @@ ul li {
 .title_img{
   grid-area: title_img;
   justify-self: start;
+  align-self: end;
 }
 
 .title_txt {
   grid-area: title_txt;
   justify-self: center;
   align-self: center;
+}
+
+.breaking_line {
+  grid-area: breaking_line;
+  border: 0.0625rem solid #000000;
+  background-color: #000000;
 }
 
 .contact_txt {

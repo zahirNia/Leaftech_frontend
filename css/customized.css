@@ -5,6 +5,7 @@
   display: grid;
   grid-template:"logo logo logo navigator navigator navigator" auto
                 "title_img title_img title_img title_txt title_txt title_txt" auto
+                "breaking_line breaking_line breaking_line breaking_line breaking_line breaking_line" auto
                 "partners partners partners partners partners partners" auto
                 "benefit1_img benefit1_img benefit2_img benefit2_img benefit3_img benefit3_img" auto
                 "benefit1_txt benefit1_txt benefit2_txt benefit2_txt benefit3_txt benefit3_txt" auto
@@ -46,12 +47,15 @@
 .title_img{
   grid-area: title_img;
   justify-self: center;
+  align-self: end;
+  border-bottom: 0.125rem solid #000000;
 }
 
 .title_txt{
   grid-area: title_txt;
   justify-self: start;
   align-self: center;
+  padding-right: 10rem;
 }
 
 h1 {
@@ -79,6 +83,12 @@ button {
   font-weight: 600;
   box-shadow: 0 2px 9px 0 rgba(0,135,230,0.6);
    */
+}
+
+.breaking_line {
+  grid-area: breaking_line;
+  border: 0.0625rem solid #000000;
+  background-color: #000000;
 }
 
 .partners {

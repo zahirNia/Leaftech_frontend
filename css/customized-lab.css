@@ -5,6 +5,7 @@
   display: grid;
   grid-template:"logo logo logo navigator navigator navigator" auto
                 "title_txt title_txt title_txt title_img title_img title_img" auto
+                "breaking_line breaking_line breaking_line breaking_line breaking_line breaking_line" auto
                 "IP_img IP_img IP_img IP_txt IP_txt IP_txt" auto
                 "CS_txt CS_txt CS_txt CS_img CS_img CS_img" auto
                 "WPA_img WPA_img WPA_img WPA_txt WPA_txt WPA_txt" auto
@@ -48,6 +49,7 @@ ul li {
 .title_img{
   grid-area: title_img;
   justify-self: start;
+  align-self: end;
 }
 
 .title_txt {
@@ -81,6 +83,12 @@ button {
   font-weight: 600;
   box-shadow: 0 2px 9px 0 rgba(0,135,230,0.6);
    */
+}
+
+.breaking_line {
+  grid-area: breaking_line;
+  border: 0.0625rem solid #000000;
+  background-color: #000000;
 }
 
 /* innovation 1 */
