@@ -90,6 +90,11 @@ button {
    */
 }
 
+button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .breaking_line {
   grid-area: breaking_line;
   border: 0.0625rem solid #000000;

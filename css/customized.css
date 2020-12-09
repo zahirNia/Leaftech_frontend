@@ -85,6 +85,11 @@ button {
    */
 }
 
+button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .breaking_line {
   grid-area: breaking_line;
   border: 0.0625rem solid #000000;
@@ -159,15 +164,14 @@ button {
   grid-area: steps;
   justify-self: center;
   text-align: center;
-  padding: 0rem 20rem;
+  padding: 0rem 20rem 3rem;
 }
 
 .contact_img {
   grid-area: contact_img;
-  justify-self: center;
-  padding: 3rem 0rem;
-  /*background-color: #B8CBE4;
-  opacity: 0.05;*/
+  justify-self: end;
+  padding-right: 3rem;
+  align-self: center;
 }
 
 .contact_txt {

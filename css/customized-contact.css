@@ -92,6 +92,11 @@ button {
    */
 }
 
+button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .footer_logo {
   grid-area: footer_logo;
   align-self: start;
