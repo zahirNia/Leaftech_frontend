@@ -12,7 +12,7 @@
                 "steps steps steps steps steps steps" auto
                 "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
                 "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
-                "footer_logo footer_logo footer_home footer_services footer_lab footer_socialmedia" auto
+                "footer_logo footer_home footer_services footer_lab footer_lab_ext footer_socialmedia" auto
                 "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
                 ". . imprint_privacy imprint_terms . imprint_copyright" auto
                 /1fr 1fr 1fr 1fr 1fr 1fr;
@@ -190,50 +190,54 @@ ul {
 
 .footer_logo {
   grid-area: footer_logo;
-  padding: 1rem 0rem 1rem 0rem;
   justify-self: center;
   align-self: start;
 }
 
 .footer_logo img {
-  display: block;
-  opacity: 0.7;
-  background-color: #FFFFFF;
   height: 25px;
 }
 
 .footer_home {
   grid-area: footer_home;
-  padding: 1rem 0rem 1rem 0rem;
-  font-size: 0.75rem;
-}
-
-.footer_home a, .footer_services a, .footer_lab a {
-  color: #778AA3;
-  text-decoration: none;
-}
-
-#home_header, #services_header, #lab_header {
-  color: #000000;
-  padding-bottom: 0.75rem;
 }
 
 .footer_services {
   grid-area: footer_services;
-  padding: 1rem 0rem 1rem 0rem;
-  font-size: 0.75rem;
 }
-
 
 .footer_lab {
   grid-area: footer_lab;
-  padding: 1rem 0rem 1rem 0rem;
-  font-size: 0.75rem;
+}
+
+.footer_lab_ext {
+  grid-area: footer_lab_ext;
 }
 
 .footer_socialmedia {
   grid-area: footer_socialmedia;
-  padding: 1rem 0rem 1rem 0rem;
+}
+
+#home_header, #services_header, #lab_header, #footer_socialmedia_header {
+  color: #000000;
+}
+
+#lab_ext_header {
+  color: #FFFFFF;
+}
+
+.footer_home a, .footer_services a, .footer_lab a, .footer_lab_ext a {
+  color: #778AA3;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.footer_socialmedia img {
+
+ }
+
+.footer_logo, .footer_home, .footer_services, .footer_lab, .footer_lab_ext, .footer_socialmedia{
+  padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
 .breaking_line_imp {
@@ -244,21 +248,21 @@ ul {
 
 .imprint_privacy {
   grid-area: imprint_privacy;
-  color: #778AA3;
-  font-size: 0.5rem;
 }
 
 .imprint_terms {
   grid-area: imprint_terms;
-  color: #778AA3;
-  font-size: 0.5rem;
 }
 
 .imprint_copyright {
   grid-area: imprint_copyright;
+}
+
+.imprint_privacy p, .imprint_terms p, .imprint_copyright p {
   color: #778AA3;
   font-size: 0.5rem;
 }
+
 
 
 
