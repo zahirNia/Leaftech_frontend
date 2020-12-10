@@ -101,7 +101,7 @@ button a {
   background-color: #000000;
 }
 
-.SA_title{
+.SA_title {
   grid-area: SA_title;
   justify-self: center;
   text-align: center;
@@ -151,8 +151,6 @@ button a {
   grid-area: SRF_inbound;
   justify-self: center;
   padding: 3rem 8rem;
-  opacity: 0.25;
-  background-color: #CBE0F6;
 }
 
 .SRF_case_study {

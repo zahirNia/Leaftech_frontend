@@ -5,13 +5,16 @@
   display: grid;
   grid-template:"logo logo logo navigator navigator navigator" auto
                 "title_img title_img title_img title_txt title_txt title_txt" auto
-                "breaking_line breaking_line breaking_line breaking_line breaking_line breaking_line" auto
+                "breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top" auto
                 "partners partners partners partners partners partners" auto
                 "benefit1_img benefit1_img benefit2_img benefit2_img benefit3_img benefit3_img" auto
                 "benefit1_txt benefit1_txt benefit2_txt benefit2_txt benefit3_txt benefit3_txt" auto
                 "steps steps steps steps steps steps" auto
                 "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
+                "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
                 "footer_logo footer_logo footer_home footer_services footer_lab footer_socialmedia" auto
+                "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
+                ". . imprint_privacy imprint_terms . imprint_copyright" auto
                 /1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -90,8 +93,8 @@ button a {
   text-decoration: none;
 }
 
-.breaking_line {
-  grid-area: breaking_line;
+.breaking_line_top {
+  grid-area: breaking_line_top;
   border: 0.0625rem solid #000000;
   background-color: #000000;
 }
@@ -100,7 +103,7 @@ button a {
   grid-area: partners;
 }
 
-.partners  ul {
+ul {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -179,37 +182,83 @@ button a {
   padding: 3rem 0rem;
 }
 
+.breaking_line_bot {
+  grid-area: breaking_line_bot;
+  border: 0.0625rem solid #000000;
+  background-color: #000000;
+}
+
 .footer_logo {
   grid-area: footer_logo;
+  padding: 1rem 0rem 1rem 0rem;
+  justify-self: center;
   align-self: start;
 }
-
-.footer_home {
-  grid-area: footer_home;
-}
-
-.footer_services {
-  grid-area: footer_services;
-}
-
-.footer_lab {
-  grid-area: footer_lab;
-}
-
-.footer_socialmedia {
-  grid-area: footer_socialmedia;
-}
-
 
 .footer_logo img {
   display: block;
   opacity: 0.7;
   background-color: #FFFFFF;
   height: 25px;
-  padding: 3rem 3rem 3rem 3rem;
+}
+
+.footer_home {
+  grid-area: footer_home;
+  padding: 1rem 0rem 1rem 0rem;
+  font-size: 0.75rem;
+}
+
+.footer_home a, .footer_services a, .footer_lab a {
+  color: #778AA3;
+  text-decoration: none;
+}
+
+#home_header, #services_header, #lab_header {
+  color: #000000;
+  padding-bottom: 0.75rem;
+}
+
+.footer_services {
+  grid-area: footer_services;
+  padding: 1rem 0rem 1rem 0rem;
+  font-size: 0.75rem;
 }
 
 
+.footer_lab {
+  grid-area: footer_lab;
+  padding: 1rem 0rem 1rem 0rem;
+  font-size: 0.75rem;
+}
+
+.footer_socialmedia {
+  grid-area: footer_socialmedia;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.breaking_line_imp {
+  grid-area: breaking_line_imp;
+  border: 0.03125rem solid #778AA3;
+  background-color: #778AA3;
+}
+
+.imprint_privacy {
+  grid-area: imprint_privacy;
+  color: #778AA3;
+  font-size: 0.5rem;
+}
+
+.imprint_terms {
+  grid-area: imprint_terms;
+  color: #778AA3;
+  font-size: 0.5rem;
+}
+
+.imprint_copyright {
+  grid-area: imprint_copyright;
+  color: #778AA3;
+  font-size: 0.5rem;
+}
 
 
 
