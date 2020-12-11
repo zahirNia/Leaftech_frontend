@@ -12,7 +12,10 @@
                 "PV_txt PV_txt PV_txt PV_img PV_img PV_img" auto
                 "FIA_img FIA_img FIA_img FIA_txt FIA_txt FIA_txt" auto
                 "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
-                "footer_logo footer_logo footer_home footer_services footer_lab footer_socialmedia" auto
+                "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
+                "footer_logo footer_home footer_services footer_lab footer_lab_ext footer_socialmedia" auto
+                "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
+                ". . imprint_privacy imprint_terms . imprint_copyright" auto
                 /1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -202,9 +205,20 @@ button a {
   align-self: center;
 }
 
+.breaking_line_bot {
+  grid-area: breaking_line_bot;
+  border: 0.0625rem solid #000000;
+  background-color: #000000;
+}
+
 .footer_logo {
   grid-area: footer_logo;
+  justify-self: center;
   align-self: start;
+}
+
+.footer_logo img {
+  height: 25px;
 }
 
 .footer_home {
@@ -219,15 +233,55 @@ button a {
   grid-area: footer_lab;
 }
 
+.footer_lab_ext {
+  grid-area: footer_lab_ext;
+}
+
 .footer_socialmedia {
   grid-area: footer_socialmedia;
 }
 
+#home_header, #services_header, #lab_header, #footer_socialmedia_header {
+  color: #000000;
+}
 
-.footer_logo img {
-  display: block;
-  opacity: 0.7;
-  background-color: #FFFFFF;
-  height: 25px;
-  padding: 3rem 3rem 3rem 3rem;
+#lab_ext_header {
+  color: #FFFFFF;
+}
+
+.footer_home a, .footer_services a, .footer_lab a, .footer_lab_ext a {
+  color: #778AA3;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.footer_socialmedia img {
+
+ }
+
+.footer_logo, .footer_home, .footer_services, .footer_lab, .footer_lab_ext, .footer_socialmedia{
+  padding: 0.25rem 0rem 0.25rem 0rem;
+}
+
+.breaking_line_imp {
+  grid-area: breaking_line_imp;
+  border: 0.03125rem solid #778AA3;
+  background-color: #778AA3;
+}
+
+.imprint_privacy {
+  grid-area: imprint_privacy;
+}
+
+.imprint_terms {
+  grid-area: imprint_terms;
+}
+
+.imprint_copyright {
+  grid-area: imprint_copyright;
+}
+
+.imprint_privacy p, .imprint_terms p, .imprint_copyright p {
+  color: #778AA3;
+  font-size: 0.5rem;
 }

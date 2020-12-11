@@ -68,7 +68,7 @@
       <img src="img/A%20whole%20year-bro.svg" alt="Improved planning">
     </div>
 
-    <div class="IP_txt">
+    <div class="IP_txt" id="IP">
       <h2>Improved planning</h2>
       <p>Based on our digital twin and local weather conditions we assess the energy balance of buildings and give detailed reports of the current building characteristics. This data can be used while planning a new building, modernizing an existing one or estimating the saving potential.</p>
       <p>To take into account local weather phenomena for the cause of several years, this service has been built around Test Reference Year data coming from the Deutsche Wetter Dienst (DWD).</p>
@@ -76,7 +76,7 @@
     </div>
 
     <!-- Innovation Nr. 2: Certification support (CS)-->
-    <div class="CS_txt">
+    <div class="CS_txt" id="CS">
       <h2>Certification support</h2>
       <p>Certifying a building can be a time consuming and expensive step, especially if it needs to be done multiple times. Our digital twin allows us to support projectors in this field and to reduce the risk.</p>
       <p>Following an iterative process, we assess the current planning state and consult our customers on the current fulfilment of standards and norms. Based on our reports, better decision making whether to trigger the certification process already or whether to redesign is possible.</p>
@@ -88,7 +88,7 @@
     </div>
 
     <!-- Innovation Nr. 3: Wind profile Analysis (WPA)-->
-    <div class="WPA_txt">
+    <div class="WPA_txt" id="WPA">
       <h2>Wind profile Analysis</h2>
       <p>The surrounding conditions do not only influence local solar radiation but are extremely relevant for wind patterns as well. Therefore, we combine our detailed 3D models and our cutting-edge virtual sensors with CFD-technologies.</p>
       <p>In first implementation projects we currently assess the potential to improve the reaction of shading systems in regard to local wind speeds.</p>
@@ -100,7 +100,7 @@
     </div>
 
     <!-- Innovation Nr. 4: Photovoltaics (PV)-->
-    <div class="PV_txt">
+    <div class="PV_txt" id="PV">
       <h2>Photovoltaics</h2>
       <p>Our digital twin is the perfect tool to plan Photovoltaic systems. Based on the project goals, we assess where to mount  how to orient and how to tilt solar panels.</p>
       <p>Using the technical data and the digital twin of the installed system, our data service creates added value by forecasting the yield for the upcoming hours and days. This information can be used to plan local energy consumption, improve energy trading and optimize the operation of storage systems.</p>
@@ -112,7 +112,7 @@
     </div>
 
     <!-- Innovation Nr. 5: Feedback and Info App (FIA)-->
-    <div class="FIA_txt">
+    <div class="FIA_txt" id="FIA">
       <h2>Feedback and Info App</h2>
       <p>Focusing on smart building and IoT systems we are aware  that only 15% of global buildings use automated systems.</p>
       <p>In order to enable people living and working in these facilities, we prototyped our feedback and info app. Based on a digital twin, the app advises building users on how to control heating and shading systems to keep the room conditions as comfortable as possible while reducing energy consumption at the same time.</p>
@@ -134,47 +134,77 @@
       <button type="button"><a href="mailto:contact@leaftech.eu">Let's build it together !</a></button>
     </div>
 
+    <!-- Breaking line-->
+    <div class="breaking_line_bot">
+    </div>
+
     <!-- Footer -->
     <div class="footer_logo">
-      <ul>
-          <li><a href="https://www.autodesk.com/"><img src="img/autodesk-logo.png"></a></li>
-        </ul>
+      <a href="https://www.autodesk.com/"><img src="img/fujitsu-logo.jpg"></a>
     </div>
 
     <div class="footer_home">
       <!-- Partner logo list -->
-      <ul>
-        <li><a href="index.html">Home</a></li>
-      </ul>
+      <p>
+        <a href="index.html" id="home_header"><b>Home</b></a>
+      </p>
     </div>
 
     <div class="footer_services">
-      <ul>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="services.html">Shading automation</a></li>
-        <li><a href="services.html">Single room forecast</a></li>
-        <li><a href="services.html">Building energy forecast</a></li>
-      </ul>
+      <p>
+        <a href="services.html" id="services_header"><b>Services</b></a>
+      </p>
+      <p>
+        <a href="services.html#SA">Shading automation</a><br>
+        <a href="services.html#SRF">Single room forecast</a><br>
+        <a href="services.html#BEF">Building energy forecast</a>
+      </p>
     </div>
 
     <div class="footer_lab">
-      <ul>
-        <li><a href="lab.html">The Lab</a></li>
-        <li><a href="lab.html">Photovoltaic</a></li>
-        <li><a href="lab.html">Improved planning</a></li>
-        <li><a href="lab.html">Certification support</a></li>
-        <li><a href="lab.html">Wind profile analysis</a></li>
-        <li><a href="lab.html">Feedback and Info App</a></li>
-      </ul>
+      <p>
+        <a href="lab.html" id="lab_header"><b>The Lab</b></a>
+      </p>
+      <p>
+        <a href="lab.html#PV">Photovoltaic</a><br>
+        <a href="lab.html#IP">Improved planning</a><br>
+        <a href="lab.html#CS">Certification support</a>
+      </p>
+    </div>
+
+    <div class="footer_lab_ext">
+      <p id="lab_ext_header">
+        <b>The Lab</b>
+      </p>
+      <p>
+        <a href="lab.html#WPA">Wind profile analysis</a><br>
+        <a href="lab.html#FIA">Feedback and Info App</a>
+      </p>
+    </div>
+
+    <div class="footer_socialmedia">
+      <p id="footer_socialmedia_header"><b>Follow us</b></p>
+      <p>
+        <a href="https://www.linkedin.com/company/leaftech/">LinkedIn</a><br>
+        <a href="https://twitter.com/leaftech_twitt?lang=en">Twitter</a>
+      </p>
     </div>
 
 
+    <!-- Breaking line-->
+    <div class="breaking_line_imp">
+    </div>
 
-    <div class="footer_socialmedia">
-      <ul>
-        <li><a href="https://www.autodesk.com/">LinkedIn</a></li>
-        <li><a href="https://www.autodesk.com/">Twitter</a></li>
-      </ul>
+    <div class="imprint_privacy">
+      <p>Privacy Policy</p>
+    </div>
+
+    <div class="imprint_terms">
+      <p>Terms of service</p>
+    </div>
+
+    <div class="imprint_copyright">
+      <p>Copyright 2020 Leaftech GmbH</p>
     </div>
 
   </div>
