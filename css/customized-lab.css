@@ -241,6 +241,15 @@ button a {
   grid-area: footer_socialmedia;
 }
 
+/* Style all font awesome icons */
+.fa {
+  color: #000000;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
 #home_header, #services_header, #lab_header, #footer_socialmedia_header {
   color: #000000;
 }
@@ -254,10 +263,6 @@ button a {
   text-decoration: none;
   font-size: 0.75rem;
 }
-
-.footer_socialmedia img {
-
- }
 
 .footer_logo, .footer_home, .footer_services, .footer_lab, .footer_lab_ext, .footer_socialmedia{
   padding: 0.25rem 0rem 0.25rem 0rem;
