@@ -17,6 +17,7 @@
                 ". . imprint_privacy imprint_terms . imprint_copyright" auto
                 /1fr 1fr 1fr 1fr 1fr 1fr;
   max-width: 1400px;
+  min-width: 1000px;
   margin: 0 auto;
 }
 
