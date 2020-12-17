@@ -6,10 +6,7 @@
   grid-template:"logo logo logo navigator navigator navigator" auto
                 "title_img title_img title_img title_txt title_txt title_txt" auto
                 "breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top" auto
-                "partners partners partners partners partners partners" auto
-                "benefit1_img benefit1_img benefit2_img benefit2_img benefit3_img benefit3_img" auto
-                "benefit1_txt benefit1_txt benefit2_txt benefit2_txt benefit3_txt benefit3_txt" auto
-                "steps steps steps steps steps steps" auto
+                "imprint imprint imprint imprint imprint imprint" auto
                 "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
                 "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
                 "footer_logo footer_home footer_services footer_lab footer_lab_ext footer_socialmedia" auto
@@ -102,75 +99,11 @@ button a {
   background-color: #000000;
 }
 
-.partners {
-  grid-area: partners;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.partners  ul li {
-  float: left;
-}
-
-.partners  img {
-  display: block;
-  opacity: 0.7;
-  background-color: #FFFFFF;
-  height: 25px;
-  padding: 3rem 3rem 3rem 3rem;
-  }
-
-#starting-partner {
-  display: block;
-  opacity: 0.7;
-  background-color: #FFFFFF;
-  height: 25px;
-  padding: 3rem 3rem 3rem 6rem;
-  }
-
-.benefit1_img {
-  grid-area: benefit1_img;
-  padding: 0rem 6rem;
-}
-
-.benefit2_img {
-  grid-area: benefit2_img;
-  padding: 0rem 3rem;
-}
-
-.benefit3_img {
-  grid-area: benefit3_img;
-  padding: 0rem 3rem;
-}
-
-.benefit1_txt {
-  grid-area: benefit1_txt;
-  justify-self: center;
-  padding: 0rem 6rem;
-}
-
-.benefit2_txt {
-  grid-area: benefit2_txt;
-  justify-self: center;
-  padding: 0rem 3rem;
-}
-
-.benefit3_txt {
-  grid-area: benefit3_txt;
-  justify-self: center;
-  padding: 0rem 3rem;
-}
-
-
-.steps{
-  grid-area: steps;
-  justify-self: center;
-  text-align: center;
-  padding: 0rem 20rem 3rem;
+.imprint{
+  grid-area: imprint;
+  justify-self: start;
+  text-align: start;
+  padding-left: 1rem;
 }
 
 .contact_img {
@@ -178,6 +111,7 @@ ul {
   justify-self: end;
   padding-right: 3rem;
   align-self: center;
+  object-fit: inherit;
 }
 
 .contact_txt {
