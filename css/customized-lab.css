@@ -45,7 +45,7 @@ ul li {
 .navigator nav ul li a {
   display: block;
   color: #352917;
-  font-family: "Nunito";
+  font-family: Nunito;
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
@@ -71,8 +71,13 @@ h1 {
   font-weight: bold;
 }
 
+h2, h3 {
+  font-family: Exo;
+  color: #263238;
+}
+
 p {
-  font-family: "Nunito Sans";
+  font-family: Nunito;
   color: #778AA3;
   font-size: 14px;
 }
@@ -81,7 +86,7 @@ button {
   height: 44px;
   width: 180px;
   color: #FFFFFF;
-  font-family: "Nunito Sans";
+  font-family: Nunito;
   font-size: 15px;
   text-align: center;
   background-color: #3087DF;
