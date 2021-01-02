@@ -57,6 +57,27 @@ ul li {
   padding: 3rem 3rem 3rem 0rem;
 }
 
+.navigator nav ul li .active {
+  display: block;
+  color: #4989D8;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3rem 3rem 3rem 0rem;
+}
+
+.navigator nav ul li a:hover {
+  display: block;
+  color: #4989D8;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3rem 3rem 3rem 0rem;
+}
+
+
 .title_img{
   grid-area: title_img;
   justify-self: center;

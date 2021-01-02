@@ -3,22 +3,22 @@
 /* Comment: forming the body grid container */
 .wrapper{
   display: grid;
-  grid-template:"logo logo logo navigator navigator navigator" auto
-                "title_img title_img title_img title_txt title_txt title_txt" auto
-                "breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top" auto
-                "partners partners partners partners partners partners" auto
-                "benefit1_img benefit1_img benefit2_img benefit2_img benefit3_img benefit3_img" auto
-                "benefit1_txt benefit1_txt benefit2_txt benefit2_txt benefit3_txt benefit3_txt" auto
-                "steps steps steps steps steps steps" auto
-                "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
-                "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
-                "footer_logo footer_home footer_services footer_lab footer_lab_ext footer_socialmedia" auto
-                "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
-                ". . imprint_privacy imprint_terms . imprint_copyright" auto
-                /1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template:"logo logo logo logo logo logo navigator navigator navigator navigator navigator navigator" auto
+                "title_img title_img title_img title_img title_img title_img title_txt title_txt title_txt title_txt title_txt title_txt" auto
+                "breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top breaking_line_top" auto
+                "partners partners partners partners partners partners partners partners partners partners partners partners" auto
+                "benefit1_img benefit1_img benefit1_img benefit1_img benefit2_img benefit2_img benefit2_img benefit2_img benefit3_img benefit3_img benefit3_img benefit3_img" auto
+                "benefit1_txt benefit1_txt benefit1_txt benefit1_txt benefit2_txt benefit2_txt benefit2_txt benefit2_txt benefit3_txt benefit3_txt benefit3_txt benefit3_txt" auto
+                "steps steps steps steps steps steps steps steps steps steps steps steps" auto
+                "contact_img contact_img contact_img contact_img contact_img contact_img contact_txt contact_txt contact_txt contact_txt contact_txt contact_txt" auto
+                "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
+                "footer_logo . footer_home footer_services footer_services footer_lab footer_lab footer_socialmedia footer_socialmedia . . ." auto
+                "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
+                ". . . imprint_privacy imprint_privacy imprint_acknowledgement imprint_acknowledgement imprint_copyright imprint_copyright . . ." auto
+                /1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   max-width: 1400px;
-  min-width: 1000px;
   margin: 0 auto;
+  grid-column-gap: 2vw;
 }
 
 .logo{
@@ -44,7 +44,27 @@
   display: block;
   color: #352917;
   font-family: Nunito;
-  font-size: 12px;
+  font-size: 0.750rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3rem 3rem 3rem 0rem;
+}
+
+.navigator nav ul li .active {
+  display: block;
+  color: #4989D8;
+  font-family: Nunito Sans;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3rem 3rem 3rem 0rem;
+}
+
+.navigator nav ul li a:hover {
+  display: block;
+  color: #4989D8;
+  font-family: Nunito Sans;
+  font-size: 0.875rem;
   font-weight: bold;
   text-decoration: none;
   padding: 3rem 3rem 3rem 0rem;
@@ -67,7 +87,7 @@
 h1 {
   font-family: Exo;
   color: #263238;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
 }
 h2, h3 {
@@ -78,15 +98,15 @@ h2, h3 {
 p {
   font-family: Nunito;
   color: #778AA3;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 button {
-  height: 44px;
-  width: 180px;
+  height: 2.75rem;
+  width: 11.25rem;
   color: #FFFFFF;
   font-family: Nunito;
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-align: center;
   background-color: #3087DF;
   /*
@@ -124,7 +144,7 @@ ul {
   display: block;
   opacity: 0.7;
   background-color: #FFFFFF;
-  height: 25px;
+  height: 1.5625rem;
   padding: 3rem 3rem 3rem 3rem;
   }
 
@@ -132,7 +152,7 @@ ul {
   display: block;
   opacity: 0.7;
   background-color: #FFFFFF;
-  height: 25px;
+  height: 1.5625rem;
   padding: 3rem 3rem 3rem 6rem;
   }
 
@@ -202,7 +222,7 @@ ul {
 }
 
 .footer_logo img {
-  height: 25px;
+  height: 1.5625rem;
 }
 
 .footer_home {
@@ -248,6 +268,13 @@ ul {
   font-size: 0.75rem;
 }
 
+.footer_home a:hover, .footer_services a:hover, .footer_lab a:hover, .footer_lab_ext a:hover {
+  color: #4989D8;
+  font-family: Nunito Sans Semi-bold;
+  font-size: 0.625rem;
+  text-decoration: none;
+}
+
 .footer_logo, .footer_home, .footer_services, .footer_lab, .footer_lab_ext, .footer_socialmedia{
   padding: 0.25rem 0rem 0.25rem 0rem;
 }
@@ -262,15 +289,15 @@ ul {
   grid-area: imprint_privacy;
 }
 
-.imprint_terms {
-  grid-area: imprint_terms;
+.imprint_acknowledgement {
+  grid-area: imprint_acknowledgement;
 }
 
 .imprint_copyright {
   grid-area: imprint_copyright;
 }
 
-.imprint_privacy a, .imprint_terms a, .imprint_copyright p {
+.imprint_privacy a, .imprint_acknowledgement a, .imprint_copyright p {
   color: #778AA3;
   font-size: 0.5rem;
   text-decoration: none;
