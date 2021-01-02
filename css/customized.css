@@ -1,6 +1,6 @@
 /* HTML structure with CSS grid */
 
-/* Comment: forming the body grid container */
+/* 1: forming the body grid container */
 .wrapper{
   display: grid;
   grid-template:"logo logo logo logo logo logo navigator navigator navigator navigator navigator navigator" auto
@@ -21,13 +21,211 @@
   grid-column-gap: 2vw;
 }
 
+/* 2: media queries */
+html {
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* 3: positioning, justifying, and alignment  */
 .logo{
   grid-area: logo;
-  padding: 3rem 3rem 3rem 6rem;
+  font-size: 1rem;
+  padding: 3em 3em 3em 6em;
 }
 
 .navigator {
   grid-area: navigator;
+  font-size: 1rem;
+}
+
+.title_img{
+  grid-area: title_img;
+  font-size: 1rem;
+  justify-self: center;
+  align-self: end;
+  border-bottom: 0.125em solid #000000;
+}
+
+.title_txt{
+  grid-area: title_txt;
+  font-size: 1rem;
+  justify-self: start;
+  align-self: center;
+  padding-right: 10em;
+}
+
+.breaking_line_top {
+  grid-area: breaking_line_top;
+  font-size: 1rem;
+  border: 0.0625rem solid #000000;
+  background-color: #000000;
+}
+
+.partners {
+  grid-area: partners;
+  font-size: 1rem;
+}
+
+.benefit1_img {
+  grid-area: benefit1_img;
+  font-size: 1rem;
+  padding: 0rem 6rem;
+}
+
+.benefit2_img {
+  grid-area: benefit2_img;
+  font-size: 1rem;
+  padding: 0rem 3rem;
+}
+
+.benefit3_img {
+  grid-area: benefit3_img;
+  font-size: 1rem;
+  padding: 0rem 3rem;
+}
+
+.benefit1_txt {
+  grid-area: benefit1_txt;
+  font-size: 1rem;
+  justify-self: center;
+  padding: 0rem 6rem;
+}
+
+.benefit2_txt {
+  grid-area: benefit2_txt;
+  font-size: 1rem;
+  justify-self: center;
+  padding: 0rem 3rem;
+}
+
+.benefit3_txt {
+  grid-area: benefit3_txt;
+  font-size: 1rem;
+  justify-self: center;
+  padding: 0rem 3rem;
+}
+
+
+.steps{
+  grid-area: steps;
+  font-size: 1rem;
+  justify-self: center;
+  text-align: center;
+  padding: 0rem 20rem 3rem;
+}
+
+.contact_img {
+  grid-area: contact_img;
+  font-size: 1rem;
+  justify-self: end;
+  padding-right: 3rem;
+  align-self: center;
+}
+
+.contact_txt {
+  grid-area: contact_txt;
+  font-size: 1rem;
+  padding: 3rem 0rem;
+}
+
+.breaking_line_bot {
+  grid-area: breaking_line_bot;
+  font-size: 1rem;
+  border: 0.0625rem solid #000000;
+  background-color: #000000;
+}
+
+.footer_logo {
+  grid-area: footer_logo;
+  font-size: 1rem;
+  justify-self: center;
+  align-self: start;
+}
+
+.footer_home {
+  grid-area: footer_home;
+  font-size: 1rem;
+}
+
+.footer_services {
+  grid-area: footer_services;
+  font-size: 1rem;
+}
+
+.footer_lab {
+  grid-area: footer_lab;
+  font-size: 1rem;
+}
+
+.footer_lab_ext {
+  grid-area: footer_lab_ext;
+  font-size: 1rem;
+}
+
+.footer_socialmedia {
+  grid-area: footer_socialmedia;
+  font-size: 1rem;
+}
+
+/* 4: styling  */
+h1 {
+  font-family: Exo;
+  font-weight: 800;
+  font-size: 2em;
+}
+h2 {
+  font-family: Exo;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: Exo;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+p {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 1em;
+  color: #778AA3;
+}
+
+button {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 1rem;
+  height: 2.75rem;
+  width: 11.25rem;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #3087DF;
+  box-shadow: 0 2px 9px 0 rgba(0,135,230,0.6);
+  border: none;
+}
+
+button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .navigator ul {
@@ -42,98 +240,32 @@
 
 .navigator nav ul li a {
   display: block;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 1em;
   color: #352917;
-  font-family: Nunito;
-  font-size: 0.750rem;
-  font-weight: bold;
   text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
+  padding: 3em 3em 3em 0em;
 }
 
 .navigator nav ul li .active {
   display: block;
-  color: #4989D8;
   font-family: Nunito Sans;
-  font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1em;
+  color: #4989D8;
   text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
+  padding: 3em 3em 3em 0em;
 }
 
 .navigator nav ul li a:hover {
   display: block;
-  color: #4989D8;
   font-family: Nunito Sans;
-  font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1em;
+  color: #4989D8;
   text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
-}
-
-.title_img{
-  grid-area: title_img;
-  justify-self: center;
-  align-self: end;
-  border-bottom: 0.125rem solid #000000;
-}
-
-.title_txt{
-  grid-area: title_txt;
-  justify-self: start;
-  align-self: center;
-  padding-right: 10rem;
-}
-
-h1 {
-  font-family: Exo;
-  color: #263238;
-  font-size: 2rem;
-  font-weight: bold;
-}
-h2, h3 {
-  font-family: Exo;
-  color: #263238;
-}
-
-p {
-  font-family: Nunito;
-  color: #778AA3;
-  font-size: 0.875rem;
-}
-
-button {
-  height: 2.75rem;
-  width: 11.25rem;
-  color: #FFFFFF;
-  font-family: Nunito;
-  font-size: 0.9375rem;
-  text-align: center;
-  background-color: #3087DF;
-  /*
-  font-weight: 600;
-  box-shadow: 0 2px 9px 0 rgba(0,135,230,0.6);
-   */
-}
-
-button a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.breaking_line_top {
-  grid-area: breaking_line_top;
-  border: 0.0625rem solid #000000;
-  background-color: #000000;
-}
-
-.partners {
-  grid-area: partners;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+  padding: 3em 3em 3em 0em;
 }
 
 .partners  ul li {
@@ -156,93 +288,8 @@ ul {
   padding: 3rem 3rem 3rem 6rem;
   }
 
-.benefit1_img {
-  grid-area: benefit1_img;
-  padding: 0rem 6rem;
-}
-
-.benefit2_img {
-  grid-area: benefit2_img;
-  padding: 0rem 3rem;
-}
-
-.benefit3_img {
-  grid-area: benefit3_img;
-  padding: 0rem 3rem;
-}
-
-.benefit1_txt {
-  grid-area: benefit1_txt;
-  justify-self: center;
-  padding: 0rem 6rem;
-}
-
-.benefit2_txt {
-  grid-area: benefit2_txt;
-  justify-self: center;
-  padding: 0rem 3rem;
-}
-
-.benefit3_txt {
-  grid-area: benefit3_txt;
-  justify-self: center;
-  padding: 0rem 3rem;
-}
-
-
-.steps{
-  grid-area: steps;
-  justify-self: center;
-  text-align: center;
-  padding: 0rem 20rem 3rem;
-}
-
-.contact_img {
-  grid-area: contact_img;
-  justify-self: end;
-  padding-right: 3rem;
-  align-self: center;
-}
-
-.contact_txt {
-  grid-area: contact_txt;
-  padding: 3rem 0rem;
-}
-
-.breaking_line_bot {
-  grid-area: breaking_line_bot;
-  border: 0.0625rem solid #000000;
-  background-color: #000000;
-}
-
-.footer_logo {
-  grid-area: footer_logo;
-  justify-self: center;
-  align-self: start;
-}
-
 .footer_logo img {
   height: 1.5625rem;
-}
-
-.footer_home {
-  grid-area: footer_home;
-}
-
-.footer_services {
-  grid-area: footer_services;
-}
-
-.footer_lab {
-  grid-area: footer_lab;
-}
-
-.footer_lab_ext {
-  grid-area: footer_lab_ext;
-}
-
-.footer_socialmedia {
-  grid-area: footer_socialmedia;
 }
 
 /* Style all font awesome icons */
@@ -281,20 +328,24 @@ ul {
 
 .breaking_line_imp {
   grid-area: breaking_line_imp;
+  font-size: 1rem;
   border: 0.03125rem solid #778AA3;
   background-color: #778AA3;
 }
 
 .imprint_privacy {
   grid-area: imprint_privacy;
+  font-size: 1rem;
 }
 
 .imprint_acknowledgement {
   grid-area: imprint_acknowledgement;
+  font-size: 1rem;
 }
 
 .imprint_copyright {
   grid-area: imprint_copyright;
+  font-size: 1rem;
 }
 
 .imprint_privacy a, .imprint_acknowledgement a, .imprint_copyright p {
