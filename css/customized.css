@@ -41,6 +41,7 @@ html {
 /* 3: positioning, justifying, and alignment */
 .logo{
   grid-area: logo;
+  align-self: center;
   font-size: 1rem;
   padding-left: 6em;
 }
@@ -76,6 +77,7 @@ html {
 .partners {
   grid-area: partners;
   font-size: 1rem;
+  justify-self: center;
 }
 
 .benefit1_img {
@@ -297,16 +299,8 @@ ul {
   display: block;
   opacity: 0.7;
   background-color: #FFFFFF;
-  height: 1.5625rem;
-  padding: 3rem 3rem 3rem 3rem;
-  }
-
-#starting-partner {
-  display: block;
-  opacity: 0.7;
-  background-color: #FFFFFF;
-  height: 1.5625rem;
-  padding: 3rem 3rem 3rem 6rem;
+  height: 2rem;
+  padding: 2em 2em;
   }
 
 .steps a {
@@ -319,7 +313,7 @@ ul {
 }
 
 .footer_logo img {
-  height: 1.5625rem;
+  height: 3rem;
 }
 
 /* Style all font awesome icons */
@@ -335,9 +329,6 @@ ul {
   color: #000000;
 }
 
-#lab_ext_header {
-  color: #FFFFFF;
-}
 
 .footer_home a, .footer_services a, .footer_lab a, .footer_lab_ext a {
   color: #778AA3;
@@ -345,14 +336,14 @@ ul {
   font-size: 0.75rem;
 }
 
-.footer_home a:hover, .footer_services a:hover, .footer_lab a:hover, .footer_lab_ext a:hover {
+.footer_home a:hover, .footer_services a:hover, .footer_lab a:hover {
   color: #4989D8;
   font-family: Nunito Sans Semi-bold;
   font-size: 0.625rem;
   text-decoration: none;
 }
 
-.footer_logo, .footer_home, .footer_services, .footer_lab, .footer_lab_ext, .footer_socialmedia{
+.footer_logo, .footer_home, .footer_services, .footer_lab, .footer_socialmedia{
   padding: 0.25rem 0rem 0.25rem 0rem;
 }
 

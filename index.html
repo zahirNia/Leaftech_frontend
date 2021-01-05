@@ -35,7 +35,7 @@
    <!-- Add your site or application content here -->
     <div class="logo">
       <!-- Leaftech Logo -->
-      <img src="img/LT-logo.jpg" alt="Leaftech's Logo" width="90">
+      <img src="assets/Logos/Leaftech%20logo/LEAFTECH-logo@1x.png" alt="Leaftech's Logo" height="32">
     </div>
 
     <div class="navigator">
@@ -70,13 +70,12 @@
     <div class="partners">
       <!-- Partner logo list -->
       <ul>
-        <li><a href="https://www.autodesk.com/"><img id="starting-partner" src="img/autodesk-logo.png"></a></li>
-        <li><a href="https://berlin-innovation-agency.com/"><img src="img/BIA-logo.png"></a></li>
-        <li><a href="https://www.climate-kic.org/"><img src="img/climate-kic.png"></a></li>
-        <li><a href="https://www.dena.de/startseite/"><img src="img/dena-logo.jpg"></a></li>
-        <li><a href="https://www.dreso.com/de/"><img src="img/dreso-logo.png"></a></li>
-        <li><a href="https://www.fujitsu.com/global/"><img src="img/fujitsu-logo.jpg"></a></li>
-        <li><a href="https://www.ibb.de/de/startseite/startseite.html"><img src="img/IBB-logo.png"></a></li>
+        <li><a id = "Climate-KIC", href="https://www.climate-kic.org/"><img src="assets/Logos/Partners%20logos/Monochrome/Climate_Kic_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
+        <li><a id = "Deneff", href="https://www.deneff.org/"><img src="assets/Logos/Partners%20logos/Monochrome/Deneff_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
+        <li><a id = "IBB", href="https://www.ibb.de/de/startseite/startseite.html"><img src="assets/Logos/Partners%20logos/Monochrome/Investition%20bank%20Berlin%20_%20logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
+        <li><a id = "Dreso", href="https://www.dreso.com/de/"><img src="assets/Logos/Partners%20logos/Monochrome/Drees-und-sommer_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
+        <li><a id = "Mujinzo", href="http://www.mujinzo-labs.com/en/"><img src="assets/Logos/Partners%20logos/Monochrome/Mujinzolabs_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
+        <li><a id = "Telekom", href="https://telekomhilft.telekom.de/t5/TechBoost-EN/ct-p/TechBoost_en"><img src="assets/Logos/Partners%20logos/Monochrome/Techboost_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
       </ul>
     </div>
 
@@ -154,7 +153,7 @@
 
     <!-- Footer -->
     <div class="footer_logo">
-      <a href="https://www.autodesk.com/"><img src="img/fujitsu-logo.jpg"></a>
+      <a href="#"><img src="assets/Logos/Leaftech%20logo/LEAFTECH-logo@2x.png"></a>
     </div>
 
     <div class="footer_home">
@@ -230,6 +229,41 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+    <!-- JS-->
+    <script>
+      function hover(element) {
+        if (element.parentElement.id === "Climate-KIC") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Climate_Kic_logo@2x.png')}
+        else if (element.parentElement.id === "Deneff") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Deneff_logo@2x.png')}
+        else if (element.parentElement.id === "IBB") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Investition bank Berlin _ logo@2x.png')}
+        else if (element.parentElement.id === "Dreso") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Drees-und-sommer_logo@2x.png')}
+        else if (element.parentElement.id === "Mujinzo") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Mujinzolabs_logo@2x.png')}
+        else if (element.parentElement.id === "Telekom") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Techboost_logo@2x.png')}
+      }
+
+      function unhover(element) {
+        if (element.parentElement.id === "Climate-KIC") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Climate_Kic_logo@2x.png')}
+        else if (element.parentElement.id === "Deneff") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Deneff_logo@2x.png')}
+        else if (element.parentElement.id === "IBB") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Investition bank Berlin _ logo@2x.png')}
+        else if (element.parentElement.id === "Dreso") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Drees-und-sommer_logo@2x.png')}
+        else if (element.parentElement.id === "Mujinzo") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Mujinzolabs_logo@2x.png')}
+        else if (element.parentElement.id === "Telekom") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Techboost_logo@2x.png')}
+      }
+    </script>
+
 
 </body>
 
