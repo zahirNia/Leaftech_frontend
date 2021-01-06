@@ -35,7 +35,7 @@
    <!-- Add your site or application content here -->
     <div class="logo">
       <!-- Leaftech Logo -->
-      <img src="assets/Logos/Leaftech%20logo/LEAFTECH-logo@1x.png" alt="Leaftech's Logo" height="32">
+      <img src="assets/Logos/Leaftech%20logo/LEAFTECH-logo@2x.png" alt="Leaftech's Logo">
     </div>
 
     <div class="navigator">
@@ -191,9 +191,9 @@
     <div class="footer_socialmedia">
       <p id="footer_socialmedia_header"><b>Follow us</b></p>
       <p>
-        <a href="https://www.facebook.com/leaftech.gmbh" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/leaftech_twitt?lang=en" class="fa fa-twitter"></a>
-        <a href="https://www.linkedin.com/company/leaftech" class="fa fa-linkedin"></a>
+        <a id = "Facebook", href="https://www.facebook.com/leaftech.gmbh"><img src="assets/Social%20Icons/Facebook%20Logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a>
+        <a id = "Twitter", href="https://twitter.com/leaftech_twitt?lang=en"><img src="assets/Social%20Icons/Twitter_Logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a>
+        <a id = "Linkedin", href="https://www.linkedin.com/company/leaftech"><img src="assets/Social%20Icons/Linkedin%20logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a>
       </p>
     </div>
 
@@ -246,6 +246,13 @@
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Mujinzolabs_logo@2x.png')}
         else if (element.parentElement.id === "Telekom") {
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Techboost_logo@2x.png')}
+        else if (element.parentElement.id === "Facebook") {
+          element.setAttribute('src', 'assets/Social%20Icons/Facebook%20Logo_active%20hover.svg')}
+        else if (element.parentElement.id === "Twitter") {
+          element.setAttribute('src', 'assets/Social%20Icons/Twitter_Logo_active%20hover.svg')}
+        else if (element.parentElement.id === "Linkedin") {
+          element.setAttribute('src', 'assets/Social%20Icons/Linkedin%20logo_active%20hover.svg')}
+
       }
 
       function unhover(element) {
@@ -261,6 +268,12 @@
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Mujinzolabs_logo@2x.png')}
         else if (element.parentElement.id === "Telekom") {
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Techboost_logo@2x.png')}
+        else if (element.parentElement.id === "Facebook") {
+          element.setAttribute('src', 'assets/Social%20Icons/Facebook%20Logo.svg')}
+        else if (element.parentElement.id === "Twitter") {
+          element.setAttribute('src', 'assets/Social%20Icons/Twitter_Logo.svg')}
+        else if (element.parentElement.id === "Linkedin") {
+          element.setAttribute('src', 'assets/Social%20Icons/Linkedin%20logo.svg')}
       }
     </script>
 

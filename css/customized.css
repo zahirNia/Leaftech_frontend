@@ -12,7 +12,7 @@
                 "steps steps steps steps steps steps steps steps steps steps steps steps" auto
                 "contact_img contact_img contact_img contact_img contact_img contact_img contact_txt contact_txt contact_txt contact_txt contact_txt contact_txt" auto
                 "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
-                "footer_logo . footer_home footer_services footer_services footer_lab footer_lab footer_socialmedia footer_socialmedia . . ." auto
+                ". footer_logo footer_home footer_services footer_services footer_lab footer_lab footer_socialmedia footer_socialmedia . . ." auto
                 "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
                 ". . . imprint_privacy imprint_privacy imprint_acknowledgement imprint_acknowledgement imprint_copyright imprint_copyright . . ." auto
                 /1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -251,6 +251,10 @@ ul {
   padding: 0;
 }
 
+.logo img {
+  height: 3rem;
+}
+
 .navigator ul {
   list-style-type: none;
   margin: 0 auto;
@@ -312,33 +316,40 @@ ul {
   text-decoration: underline;
 }
 
+.contact_img img {
+  padding: 2em 0em;
+}
+
 .footer_logo img {
   height: 3rem;
 }
 
-/* Style all font awesome icons */
-.fa {
-  color: #000000;
-  font-size: 0.75rem;
-  text-align: center;
-  text-decoration: none;
-  padding-right: 1rem;
+.footer_home, .footer_services, .footer_lab {
+  line-height: 100%;
+  padding: 2em 0em;
 }
 
 #home_header, #services_header, #lab_header, #footer_socialmedia_header {
+  font-family: Nunito Sans;
   color: #000000;
+  font-size: 0.75em;
+}
+
+#home_header:hover, #services_header:hover, #lab_header:hover {
+  color: #4989D8;
+  font-size: 0.625rem;
 }
 
 
-.footer_home a, .footer_services a, .footer_lab a, .footer_lab_ext a {
+.footer_home a, .footer_services a, .footer_lab a {
   color: #778AA3;
+  font-size: 0.75em;
   text-decoration: none;
-  font-size: 0.75rem;
 }
 
 .footer_home a:hover, .footer_services a:hover, .footer_lab a:hover {
   color: #4989D8;
-  font-family: Nunito Sans Semi-bold;
+  font-family: Nunito Sans;
   font-size: 0.625rem;
   text-decoration: none;
 }
@@ -356,22 +367,29 @@ ul {
 
 .imprint_privacy {
   grid-area: imprint_privacy;
+  align-self: center;
   font-size: 1rem;
+  padding: 0.5em 0em;
 }
 
 .imprint_acknowledgement {
   grid-area: imprint_acknowledgement;
+  align-self: center;
   font-size: 1rem;
+  padding: 0.5em 0em;
 }
 
 .imprint_copyright {
   grid-area: imprint_copyright;
+  align-self: center;
   font-size: 1rem;
+  padding: 0.5em 0em;
 }
 
 .imprint_privacy a, .imprint_acknowledgement a, .imprint_copyright p {
   color: #778AA3;
-  font-size: 0.5rem;
+  font-family: Nunito Sans;
+  font-size: 0.625em;
   text-decoration: none;
 }
 
