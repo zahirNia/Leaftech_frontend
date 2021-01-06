@@ -12,7 +12,7 @@
                 "steps steps steps steps steps steps steps steps steps steps steps steps" auto
                 "contact_img contact_img contact_img contact_img contact_img contact_img contact_txt contact_txt contact_txt contact_txt contact_txt contact_txt" auto
                 "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
-                ". footer_logo footer_home footer_services footer_services footer_lab footer_lab footer_socialmedia footer_socialmedia . . ." auto
+                ". footer_logo footer_home footer_services footer_services footer_lab footer_lab footer_media footer_media . . ." auto
                 "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
                 ". . . imprint_privacy imprint_privacy imprint_acknowledgement imprint_acknowledgement imprint_copyright imprint_copyright . . ." auto
                 /1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -82,41 +82,44 @@ html {
 
 .benefit1_img {
   grid-area: benefit1_img;
+  justify-self: left;
   font-size: 1rem;
-  padding: 0rem 6rem;
+  padding: 3em 3em 0em 6em;
 }
 
 .benefit2_img {
   grid-area: benefit2_img;
+  justify-self: left;
   font-size: 1rem;
-  padding: 0rem 3rem;
+  padding: 3em 3em 0em 3em;
 }
 
 .benefit3_img {
   grid-area: benefit3_img;
+  justify-self: left;
   font-size: 1rem;
-  padding: 0rem 3rem;
+  padding: 3em 6em 0em 3em;
 }
 
 .benefit1_txt {
   grid-area: benefit1_txt;
   font-size: 1rem;
-  justify-self: center;
-  padding: 0rem 6rem;
+  justify-self: left;
+  padding: 0em 3em 3em 6em;
 }
 
 .benefit2_txt {
   grid-area: benefit2_txt;
   font-size: 1rem;
-  justify-self: center;
-  padding: 0rem 3rem;
+  justify-self: left;
+  padding: 0em 3em 3em 3em;
 }
 
 .benefit3_txt {
   grid-area: benefit3_txt;
   font-size: 1rem;
-  justify-self: center;
-  padding: 0rem 3rem;
+  justify-self: left;
+  padding: 0em 6em 3em 3em;
 }
 
 
@@ -125,7 +128,7 @@ html {
   font-size: 1rem;
   justify-self: center;
   text-align: center;
-  padding: 0rem 20rem 3rem;
+  padding: 0em 20em 3em;
 }
 
 .contact_img {
@@ -171,13 +174,8 @@ html {
   font-size: 1rem;
 }
 
-.footer_lab_ext {
-  grid-area: footer_lab_ext;
-  font-size: 1rem;
-}
-
-.footer_socialmedia {
-  grid-area: footer_socialmedia;
+.footer_media {
+  grid-area: footer_media;
   font-size: 1rem;
 }
 
@@ -320,42 +318,44 @@ ul {
   padding: 2em 0em;
 }
 
-.footer_logo img {
-  height: 3rem;
-}
 
-.footer_home, .footer_services, .footer_lab {
+.footer_logo, .footer_home, .footer_services, .footer_lab, .footer_media {
+  font-family: Nunito Sans;
   line-height: 100%;
   padding: 2em 0em;
 }
 
-#home_header, #services_header, #lab_header, #footer_socialmedia_header {
-  font-family: Nunito Sans;
+.footer_logo img {
+  height: 3rem;
+}
+
+.footer_home h3 a, .footer_services h3 a, .footer_lab h3 a, .footer_media h3 a {
   color: #000000;
   font-size: 0.75em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2em 0em;
 }
 
-#home_header:hover, #services_header:hover, #lab_header:hover {
+.footer_home h3 a:hover, .footer_services h3 a:hover, .footer_lab h3 a:hover {
   color: #4989D8;
-  font-size: 0.625rem;
+  font-size: 0.625em;
 }
 
-
-.footer_home a, .footer_services a, .footer_lab a {
+.footer_home ul li a, .footer_services ul li a, .footer_lab ul li a {
   color: #778AA3;
   font-size: 0.75em;
   text-decoration: none;
 }
 
-.footer_home a:hover, .footer_services a:hover, .footer_lab a:hover {
+.footer_home ul li a:hover, .footer_services ul li a:hover, .footer_lab ul li a:hover {
   color: #4989D8;
-  font-family: Nunito Sans;
-  font-size: 0.625rem;
-  text-decoration: none;
+  font-size: 0.625em;
 }
 
-.footer_logo, .footer_home, .footer_services, .footer_lab, .footer_socialmedia{
-  padding: 0.25rem 0rem 0.25rem 0rem;
+.footer_media ul li {
+  float: left;
+  padding: 0em 0.5em;
 }
 
 .breaking_line_imp {
