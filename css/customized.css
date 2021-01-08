@@ -13,18 +13,6 @@ html {
   font-size: 14px;
 }
 
-@media (max-width: 900px) {
-  html {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 400px) {
-  html {
-    font-size: 10px;
-  }
-}
-
 body {}
 
 h1 {
@@ -160,7 +148,7 @@ button a {
 
 .benefits {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2rem;
   background-color: var(--background_blue);
   justify-items: start;
@@ -333,7 +321,108 @@ footer {
 }
 
 
+/* media queries */
+@media (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+}
 
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+
+  .navigator {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: center;
+    background-color: var(--background_blue);
+  }
+  .navigator img {
+  display: none;
+  }
+
+  .navigator .main-nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  list-style: none;
+  padding: 0;
+  }
+
+  /* Header */
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--background_blue);
+  }
+
+  .main-header img {
+    display: none
+  }
+
+  .main-header .text h1, .main-header .text p {
+    text-align: center;
+  }
+
+  .partners ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--background_blue);
+    justify-items: center;
+  }
+
+  .benefit {
+    text-align: center;
+  }
+
+  .steps {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 2rem 3rem;
+  }
+
+  .steps img {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .breaking_line_bot {
+    display: none;
+  }
+
+  footer{
+    display: none;
+  }
+
+  .imprint {
+  display: grid;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: start;
+  }
+
+}
 
 
 
