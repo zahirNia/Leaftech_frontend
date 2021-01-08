@@ -28,7 +28,7 @@
 
 }
 
-.navigator{
+.main-nav{
   grid-area: navigator;
 }
 
@@ -42,7 +42,7 @@ ul li {
   float: left;
 }
 
-.navigator nav ul li a {
+.main-nav nav ul li a {
   display: block;
   color: #352917;
   font-family: Nunito;
@@ -52,7 +52,7 @@ ul li {
   padding: 3rem 3rem 3rem 0rem;
 }
 
-.navigator nav ul li .active {
+.main-nav nav ul li .active {
   display: block;
   color: #4989D8;
   font-family: Nunito Sans;
@@ -62,7 +62,7 @@ ul li {
   padding: 3rem 3rem 3rem 0rem;
 }
 
-.navigator nav ul li a:hover {
+.main-nav nav ul li a:hover {
   display: block;
   color: #4989D8;
   font-family: Nunito Sans;

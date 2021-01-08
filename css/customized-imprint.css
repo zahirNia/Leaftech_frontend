@@ -23,21 +23,21 @@
   padding: 3rem 3rem 3rem 6rem;
 }
 
-.navigator {
+.main-nav {
   grid-area: navigator;
 }
 
-.navigator ul {
+.main-nav ul {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
 
-.navigator ul li {
+.main-nav ul li {
   float: left;
 }
 
-.navigator nav ul li a {
+.main-nav nav ul li a {
   display: block;
   color: #352917;
   font-family: Nunito;
@@ -47,7 +47,7 @@
   padding: 3rem 3rem 3rem 0rem;
 }
 
-.navigator nav ul li .active {
+.main-nav nav ul li .active {
   display: block;
   color: #4989D8;
   font-family: Nunito Sans;
@@ -57,7 +57,7 @@
   padding: 3rem 3rem 3rem 0rem;
 }
 
-.navigator nav ul li a:hover {
+.main-nav nav ul li a:hover {
   display: block;
   color: #4989D8;
   font-family: Nunito Sans;

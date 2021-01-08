@@ -32,15 +32,14 @@
     <![endif]-->
 
   <div class="wrapper">
-   <!-- Add your site or application content here -->
-    <div class="logo">
-      <!-- Leaftech Logo -->
-      <img src="assets/Logos/Leaftech%20logo/LEAFTECH-removebg-preview.png" alt="Leaftech's Logo">
-    </div>
 
-    <div class="navigator">
+    <!-- top of the page -->
+    <section class="navigator">
+      <!-- Logo -->
+      <img src="assets/Logos/Leaftech%20logo/LEAFTECH-removebg-preview.png" alt="Leaftech's Logo">
+
       <!-- navigation bar -->
-      <nav>
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="services.html">Services</a></li>
@@ -48,26 +47,27 @@
           <li><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
-    </div>
+    </section>
 
-    <!-- The solution => The what-->
-    <div class="title_img">
+    <!-- Header- The solution => The what -->
+    <header class="main-header">
       <!-- Leaftech Logo -->
       <img src="assets/img/Building-bro.svg" alt="Target smart building">
-    </div>
 
-    <!-- The solution => The what-->
-    <div class="title_txt">
-      <h1>Optimise your building automation system</h1>
-      <p>Leaftech enables you to continuously forecast your building's operation conditions. Upgrading the control systems with our data services effectively reduces energy costs and CO<sub>2</sub> emissions while maximizing user comfort.</p>
-      <button type="button"><a href="mailto:contact@leaftech.eu">Get in touch</a></button>
-    </div>
+      <!-- The solution => The what -->
+      <div class="text">
+        <h1>Optimise your building automation system</h1>
+        <p>Leaftech enables you to continuously forecast your building's operation conditions. Upgrading the control systems with our data services effectively reduces energy costs and CO<sub>2</sub> emissions while maximizing user comfort.</p>
+        <button type="button"><a href="mailto:contact@leaftech.eu">Get in touch</a></button>
+      </div>
+    </header>
+
 
     <!-- Breaking line-->
     <div class="breaking_line_top">
     </div>
 
-    <div class="partners">
+    <section class="partners">
       <!-- Partner logo list -->
       <ul>
         <li><a id = "Climate-KIC", href="https://www.climate-kic.org/"><img src="assets/Logos/Partners%20logos/Monochrome/Climate_Kic_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
@@ -77,71 +77,68 @@
         <li><a id = "Mujinzo", href="http://www.mujinzo-labs.com/en/"><img src="assets/Logos/Partners%20logos/Monochrome/Mujinzolabs_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
         <li><a id = "Telekom", href="https://telekomhilft.telekom.de/t5/TechBoost-EN/ct-p/TechBoost_en"><img src="assets/Logos/Partners%20logos/Monochrome/Techboost_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
       </ul>
-    </div>
+    </section>
 
-    <!-- benefits of the solution => The why-->
-    <div class="benefit1_img">
-      <img src="assets/img/Savings-bro%20(1).svg" alt="Less cost">
-    </div>
+    <!-- benefits of the solution => The why -->
+    <main class="benefits">
+      <!-- benefit 1 => lower cost-->
+      <section class="benefit cost">
+        <img src="assets/img/Savings-bro%20(1).svg" alt="Less cost">
+        <h3>Reduce your energy cost</h3>
+        <p>Utilizing the full stack of Leaftech's data services for proactive control unlocks energy cost reducitons of up to 28%.</p>
+      </section>
 
-    <div class="benefit1_txt">
-      <h3>Reduce your energy cost</h3>
-      <p>Utilizing the full stack of Leaftech's data services for proactive control unlocks energy cost reducitons of up to 28%.</p>
-    </div>
+      <!-- benefit 2 => health-->
+      <section class="benefit health">
+        <img src="assets/img/Mental%20health-bro.svg" alt="Better health">
+        <h3>Boost health and productivity for your tenants</h3>
+        <p>Our data solutions maximises the visual and thermal comfort of your room conditions. This has several benefits in regards to health and leads to productivity increments of 10%-25%.</p>
+      </section>
 
-    <!-- benefit 2 => health-->
-    <div class="benefit2_img">
-       <img src="assets/img/Mental%20health-bro.svg" alt="Better health">
-    </div>
+      <!-- benefit 3 => prestige-->
+      <section class="benefit prestige">
+        <img src="assets/img/Grades-bro.svg" alt="more prestigious">
+        <h3>Improve your ratings and certifications</h3>
+        <p>Fulfill technical standards like VDI 3813, VDI 3814 and EN15232 by adding our data services to your building system.</p>
+        <p>Additional rating points for standards such as LEED or DGNB can be received for visual and thermal comfort, and energy efficiency, ecology as well simply the implementation of building automation.</p>
+      </section>
 
-    <div class="benefit2_txt">
-      <h3>Boost health and productivity for your tenants</h3>
-      <p>Our data solutions maximises the visual and thermal comfort of your room conditions. This has several benefits in regards to health and leads to productivity increments of 10%-25%.</p>
-    </div>
+    </main>
 
-    <!-- benefit 3 => prestige-->
-    <div class="benefit3_img">
-      <img src="assets/img/Grades-bro.svg" alt="more prestigious">
-    </div>
-
-    <div class="benefit3_txt">
-      <h3>Improve your ratings and certifications</h3>
-      <p>Fulfill technical standards like VDI 3813, VDI 3814 and EN15232 by adding our data services to your building system.</p>
-      <p>Additional rating points for standards such as LEED or DGNB can be received for visual and thermal comfort, and energy efficiency, ecology as well simply the implementation of building automation.</p>
-    </div>
 
     <!-- The solution => The what-->
-    <section class="steps">
-      <h2>Our technology: The AI driven digital twin</h2>
-      <p>Our hardware-free solution enables you to generate the required data in three steps.</p>
+    <article class="steps">
+      <h1>Our technology: The AI driven digital twin</h1>
+      <p class="sticky">Our hardware-free solution enables you to generate the required data in three steps.</p>
       <!-- The how-->
       <!-- step 1 => static data collection-->
       <img src="assets/Illustrations/Home%20page/Step1.svg" alt="Static data">
       <h3>3D Modelling with static data</h3>
-      <p>We model your building and its surroundings in three dimensions. We get started with any data you provide us with and add missing information layer by layer.</p>
+      <p class="sticky">We model your building and its surroundings in three dimensions. We get started with any data you provide us with and add missing information layer by layer.</p>
       <!-- step 2 => dynamic data collection-->
       <img src="assets/Illustrations/Home%20page/Step%202.svg" alt="Dynamic data">
       <h3>Capturing dynamic data with virtual sensors</h3>
-      <p>Our data solutions maximises the visual and thermal comfort of your room conditions. This has several benefits in regards to health and leads to productivity increments of 10%-25%.</p>
+      <p class="sticky">Our data solutions maximises the visual and thermal comfort of your room conditions. This has several benefits in regards to health and leads to productivity increments of 10%-25%.</p>
       <!-- step 3 => data for control-->
       <img src="assets/Illustrations/Home%20page/Step%203.svg" alt="Data provision">
       <h3>Providing data for optimised control</h3>
-      <p>We merge the dynamic and static data threads with our machine learning algorithms to form a digital twin of the building. In the next step, taking advantage of machine learning algorithms the energy consumption of the building is predicted. You can choose which services you specifically need to ensure optimal conditions.</p>
+      <p class="sticky">We merge the dynamic and static data threads with our machine learning algorithms to form a digital twin of the building. In the next step, taking advantage of machine learning algorithms the energy consumption of the building is predicted.</p>
+      <p>You can choose which services you specifically need to ensure optimal conditions.</p>
       <!-- see our services -->
       <img src="assets/Illustrations/Home%20page/Separation%20line.svg" alt="See our services"><br>
       <a href="services.html">Learn more about our services</a>
-    </section>
+    </article>
 
     <!-- contact us-->
-    <div class="contact_img">
+    <section class="contact">
       <img src="assets/img/Hello-bro.svg" alt="contact us">
-    </div>
+      <div>
+        <h2>Would you like to become a partner</h2>
+        <p>If you have interest, or would like to receive more information feel free to contact us.</p>
+        <button type="button"><a href="mailto:contact@leaftech.eu">Contact us</a></button>
+      </div>
+    </section>
 
-    <div class="contact_txt">
-      <h2>Would you like to become a partner</h2>
-      <p>If you have interest, or would like to receive more information feel free to contact us.</p>
-      <button type="button"><a href="mailto:contact@leaftech.eu">Contact us</a></button>
-    </div>
 
     <div class="contact_background_color">
       <!-- Just for styling purposes-->
@@ -152,62 +149,71 @@
     </div>
 
     <!-- Footer -->
-    <section class="footer_logo">
-      <a><img src="assets/Logos/Leaftech%20logo/LEAFTECH-removebg-preview.png"></a>
-    </section>
+    <footer>
+      <section class="footer_logo">
+        <a href="index.html"><img src="assets/Logos/Leaftech%20logo/LEAFTECH-removebg-preview.png"></a>
+      </section>
 
-    <section class="footer_home">
-      <!-- Partner logo list -->
-      <h3><a href="index.html">Home</a></h3>
-    </section>
+      <section class="footer_home">
+        <!-- Partner logo list -->
+        <h3><a href="index.html">Home</a></h3>
+      </section>
 
-    <section class="footer_services">
-      <h3><a href="services.html">Services</a></h3>
-      <ul>
-        <li><a href="services.html#SA">Shading automation</a></li>
-        <li><a href="services.html#SRF">Single room forecast</a></li>
-        <li><a href="services.html#BEF">Building energy forecast</a></li>
-      </ul>
-    </section>
+      <section class="footer_services">
+        <h3><a href="services.html">Services</a></h3>
+        <ul>
+          <li><a href="services.html#SA">Shading automation</a></li>
+          <li><a href="services.html#SRF">Single room forecast</a></li>
+          <li><a href="services.html#BEF">Building energy forecast</a></li>
+        </ul>
+      </section>
 
-    <section class="footer_lab">
-      <h3><a href="lab.html">The Lab</a></h3>
-      <ul>
-        <li><a href="lab.html#PV">Photovoltaic</a></li>
-        <li><a href="lab.html#IP">Improved planning</a></li>
-        <li><a href="lab.html#CS">Certification support</a></li>
-        <li><a href="lab.html#WPA">Wind profile analysis</a></li>
-        <li><a href="lab.html#FIA">Feedback and Info App</a></li>
-      </ul>
-    </section>
+      <section class="footer_lab">
+        <h3><a href="lab.html">The Lab</a></h3>
+        <ul>
+          <li><a href="lab.html#PV">Photovoltaic</a></li>
+          <li><a href="lab.html#IP">Improved planning</a></li>
+          <li><a href="lab.html#CS">Certification support</a></li>
+          <li><a href="lab.html#WPA">Wind profile analysis</a></li>
+          <li><a href="lab.html#FIA">Feedback and Info App</a></li>
+        </ul>
+      </section>
 
-    <section class="footer_media">
-      <h3><a>Follow us</a></h3>
-      <ul>
-        <li><a id = "Facebook", href="https://www.facebook.com/leaftech.gmbh"><img src="assets/Social%20Icons/Facebook%20Logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
-        <li><a id = "Twitter", href="https://twitter.com/leaftech_twitt?lang=en"><img src="assets/Social%20Icons/Twitter_Logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
-        <li><a id = "Linkedin", href="https://www.linkedin.com/company/leaftech"><img src="assets/Social%20Icons/Linkedin%20logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
-      </ul>
-    </section>
+      <section class="footer_media">
+        <h3><a>Follow us</a></h3>
+        <ul>
+          <li><a id = "Facebook", href="https://www.facebook.com/leaftech.gmbh"><img src="assets/Social%20Icons/Facebook%20Logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
+          <li><a id = "Twitter", href="https://twitter.com/leaftech_twitt?lang=en"><img src="assets/Social%20Icons/Twitter_Logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
+          <li><a id = "Linkedin", href="https://www.linkedin.com/company/leaftech"><img src="assets/Social%20Icons/Linkedin%20logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
+        </ul>
+      </section>
+    </footer>
 
 
     <!-- Breaking line-->
     <div class="breaking_line_imp">
     </div>
 
-    <div class="imprint_privacy">
-      <a href="imprint.html">Privacy policy & Terms of services</a>
-    </div>
+    <!-- imprint-->
+    <article class="imprint">
+      <section class="imprint_privacy">
+        <a href="imprint.html">Privacy policy & Terms of services</a>
+      </section>
 
-    <div class="imprint_acknowledgement">
-      <a href="https://www.freepik.com">Illustrations by www.freepik.com</a>
-    </div>
+      <section class="imprint_acknowledgement">
+        <a href="https://www.freepik.com">Illustrations by www.freepik.com</a>
+      </section>
 
-    <div class="imprint_copyright">
-      <p>Copyright 2020 Leaftech GmbH</p>
-    </div>
+      <section class="imprint_copyright">
+        <p>Copyright 2020 Leaftech GmbH</p>
+      </section>
+    </article>
+
+
+
 
   </div>
+  <!-- wrapper ends-->
 
   <!-- JS-->
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
