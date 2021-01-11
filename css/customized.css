@@ -100,13 +100,11 @@
 /* media queries */
 @media (max-width: 700px) {
   html {
-    font-size: 12px;
   }
 }
 
 @media (max-width: 500px) {
   html {
-    font-size: 10px;
   }
 
   /* Header */
@@ -116,10 +114,6 @@
     align-items: center;
     justify-items: center;
     background-color: var(--background_blue);
-  }
-
-  .main-header img {
-    display: none
   }
 
   .main-header .text h1, .main-header .text p{
@@ -142,7 +136,6 @@
   .partners ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-gap: 1rem;
     justify-items: center;
     align-items: center;
@@ -174,9 +167,6 @@
     display: block;
   }
 
-  .contact {
-    display: none;
-  }
 
 }
 

@@ -232,6 +232,12 @@ footer {
   html {
     font-size: 10px;
   }
+
+  /* class="responsive-hidden" */
+  .responsive-hidden {
+    display: none;
+  }
+
   /* Navigator */
   .navigator {
     display: grid;
