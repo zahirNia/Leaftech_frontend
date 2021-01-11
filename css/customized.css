@@ -43,7 +43,7 @@
 
 .benefits {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   background-color: var(--background_blue);
   justify-items: start;
@@ -99,13 +99,37 @@
 
 /* media queries */
 @media (max-width: 700px) {
-  html {
+
+    .benefits {
+      display: grid;
+      grid-template-areas:  "cost health"
+                            "prestige prestige";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .cost {
+      grid-area: cost;
+    }
+
+    .health {
+      grid-area: health;
+    }
+
+    .prestige {
+      grid-area: prestige;
+    }
+
+    .benefit {
+      text-align: center;
+      padding: 2rem;
+    }
+
   }
-}
 
 @media (max-width: 500px) {
-  html {
-  }
 
   /* Header */
   .main-header {
@@ -145,15 +169,30 @@
 
   .benefits {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    background-color: var(--background_blue);
+    grid-template-areas:  "cost"
+                          "health"
+                          "prestige";
+    grid-template-columns: 1fr;
     justify-items: center;
+    align-items: center;
   }
 
+  .cost {
+      grid-area: cost;
+    }
+
+  .health {
+      grid-area: health;
+    }
+
+  .prestige {
+      grid-area: prestige;
+    }
+
   .benefit {
-    text-align: center;
-    padding: 0rem;
-  }
+      text-align: center;
+      padding: 2rem;
+    }
 
   .steps {
     display: grid;
