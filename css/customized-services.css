@@ -1,136 +1,126 @@
-/* HTML structure with CSS grid */
-
-/* Comment: forming the body grid container */
-.wrapper{
-  display: grid;
-  grid-template:"logo logo logo navigator navigator navigator" auto
-                "title_txt title_txt title_txt title_img title_img title_img" auto
-                "breaking_line breaking_line breaking_line breaking_line breaking_line breaking_line" auto
-                "SA_title SA_title SA_title SA_title SA_title SA_title" auto
-                "SA_img SA_img SA_img SA_txt SA_txt SA_txt" auto
-                "SA_inbound SA_inbound SA_inbound SA_inbound SA_inbound SA_inbound" auto
-                "SRF_title SRF_title SRF_title SRF_title SRF_title SRF_title" auto
-                "SRF_img SRF_img SRF_img SRF_txt SRF_txt SRF_txt" auto
-                ". . . SRF_inbound SRF_inbound SRF_inbound" auto
-                "SRF_case_study SRF_case_study SRF_case_study SRF_case_study SRF_case_study SRF_case_study" auto
-                "BEF_title BEF_title BEF_title BEF_title BEF_title BEF_title" auto
-                "BEF_img BEF_img BEF_img BEF_txt BEF_txt BEF_txt" auto
-                "BEF_case_study BEF_case_study BEF_case_study BEF_case_study BEF_case_study BEF_case_study" auto
-                "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
-                "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
-                "footer_logo footer_home footer_services footer_lab footer_lab_ext footer_socialmedia" auto
-                "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
-                ". . imprint_privacy imprint_terms . imprint_copyright" auto
-                /1fr 1fr 1fr 1fr 1fr 1fr;
-  max-width: 1400px;
-  min-width: 1000px;
-  margin: 0 auto;
+/* CSS variables */
+:root {
+  --leaftech_blue: #4989D8;
+  --leaftech_gray: #778AA3;
+  --background_blue: #B8CBE40D;
+  --heading_font: Exo;
+  --paragraph_font: Nunito Sans;
+  --border-line: 0.0625rem solid #000000;
 }
 
-.logo{
-  grid-area: logo;
-  padding: 3rem 3rem 3rem 6rem;
-
-}
-
-.main-nav{
-  grid-area: navigator;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-}
-
-ul li {
-  float: left;
-}
-
-.main-nav nav ul li a {
-  display: block;
-  color: #352917;
-  font-family: Nunito;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
-}
-
-.main-nav nav ul li .active {
-  display: block;
-  color: #4989D8;
-  font-family: Nunito Sans;
+/* Global settings */
+html {
   font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
 }
 
-.main-nav nav ul li a:hover {
-  display: block;
-  color: #4989D8;
-  font-family: Nunito Sans;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
-}
-
-
-.title_img{
-  grid-area: title_img;
-  justify-self: center;
-  align-self: end;
-}
-
-.title_txt{
-  grid-area: title_txt;
-  justify-self: center;
-  align-self: center;
-}
+body {}
 
 h1 {
-  font-family: Exo;
-  color: #263238;
-  font-size: 32px;
-  font-weight: bold;
+  font-family: var(--heading_font);
+  font-weight: 800;
+  font-size: 2rem;
 }
 
-h2, h3 {
-  font-family: Exo;
-  color: #263238;
+h2 {
+  font-family: var(--heading_font);
+  font-weight: 600;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: var(--heading_font);
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 p {
-  font-family: Nunito;
-  color: #778AA3;
-  font-size: 14px;
+  font-family: var(--paragraph_font);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--leaftech_gray);
 }
 
 button {
-  height: 44px;
-  width: 180px;
+  font-family: var(--paragraph_font);
+  font-weight: 400;
+  height: 2.75rem;
+  width: 11.25rem;
   color: #FFFFFF;
-  font-family: Nunito;
-  font-size: 15px;
   text-align: center;
   background-color: #3087DF;
-  /*
-  font-weight: 600;
   box-shadow: 0 2px 9px 0 rgba(0,135,230,0.6);
-   */
+  border: none;
 }
 
 button a {
-  color: #FFFFFF;
   text-decoration: none;
+  color: #FFFFFF;
 }
 
-.breaking_line {
-  grid-area: breaking_line;
-  border: 0.0625rem solid #000000;
-  background-color: #000000;
+
+/* Forming the main container */
+.wrapper{
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Top container */
+.navigator {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
+  align-items: center;
+  background-color: var(--background_blue);
+}
+
+.navigator img {
+  height: 3rem;
+  padding-left: 6em;
+}
+
+.main-nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav ul li a {
+  display: block;
+  font-family: var(--paragraph_font);
+  font-weight: 700;
+  text-decoration: none;
+  color: #352917;
+}
+
+.main-nav ul li a:hover {
+  color: var(--leaftech_blue);
+}
+
+.main-nav ul li .active {
+  color: var(--leaftech_blue);
+}
+
+/* Header */
+.main-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--background_blue);
+  border-bottom: 0.25rem #000000;
+}
+
+.main-header img {
+  padding: 2em 2em 0em 2em;
+  border-bottom: 0.125em solid #000000;
+}
+
+.main-header .text h1, .main-header .text p {
+  padding-right: 9em;
 }
 
 .SA_title {

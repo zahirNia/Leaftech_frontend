@@ -9,13 +9,17 @@
 
   <link rel="manifest" href="site.webmanifest"> <!-- why this?? -->
   <link rel="apple-touch-icon" href="icon.png"> <!-- why this?? -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito"> <!-- Googlefonts- Nunito -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo"> <!-- Googlefonts- Exo -->
+
+  <!-- Googlefonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600;800&display=swap" rel="stylesheet"> <!-- Googlefonts- Exo -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- Googlefonts- Nunito -->
 
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/leaftech-standard.css">
   <link rel="stylesheet" href="css/customized-services.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -29,39 +33,39 @@
     <![endif]-->
 
   <div class="wrapper">
-   <!-- Add your site or application content here -->
-    <div class="logo">
-      <!-- Leaftech Logo -->
-      <img src="img/LT-logo.jpg" alt="Leaftech's Logo" width="90">
-    </div>
 
-    <div class="navigator">
+    <!-- top of the page -->
+    <section class="navigator">
+      <!-- Logo -->
+      <img src="assets/Logos/Leaftech%20logo/LEAFTECH-removebg-preview.png" alt="Leaftech's Logo">
+
       <!-- navigation bar -->
-      <nav>
+      <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="lab.html">The Lab</a></li>
           <li><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
-    </div>
+    </section>
 
-    <!-- The solution => The what-->
-    <div class="title_img">
+    <!-- Header- The solution => The what -->
+    <header class="main-header">
       <!-- Leaftech Logo -->
-      <img src="img/Orchestra-bro.svg" alt="together better">
-    </div>
+      <img src="assets/img/Building-bro.svg" alt="Target smart building">
 
-    <div class="title_txt">
-      <!-- Moto -->
-      <h1>Powerful alone. <br> Better together.</h1>
-      <p>Leaftech’s services are potent on their own, <br> They deliver even more potential when combined.</p>
-      <button type="button"><a href="mailto:contact@leaftech.eu">Contact us</a></button>
-    </div>
+      <!-- The solution => The what -->
+      <div class="text">
+        <h1>Optimise your building automation system</h1>
+        <p>Leaftech enables you to continuously forecast your building's operation conditions. Upgrading the control systems with our data services effectively reduces energy costs and CO<sub>2</sub> emissions while maximizing user comfort.</p>
+        <button type="button"><a href="mailto:contact@leaftech.eu">Get in touch</a></button>
+      </div>
+    </header>
+
 
     <!-- Breaking line-->
-    <div class="breaking_line">
+    <div class="breaking_line_top">
     </div>
 
     <!-- Service Nr. 1: Shading automation (SA)-->
