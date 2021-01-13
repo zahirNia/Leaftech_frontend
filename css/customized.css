@@ -1,14 +1,4 @@
 /* Header */
-.main-header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  align-items: center;
-  justify-items: center;
-  background-color: var(--background_blue);
-  border-bottom: 0.25rem #000000;
-}
-
 .main-header img {
   padding: 2em 2em 0em 2em;
   border-bottom: 0.125em solid #000000;
@@ -18,6 +8,7 @@
   padding-right: 9em;
 }
 
+/* Main */
 .partners ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -35,11 +26,6 @@
   height: 2rem;
   padding: 2em 2em;
   }
-
-.breaking_line_top {
-  border: var(--border-line);
-  background-color: #000000;
-}
 
 .benefits {
   display: grid;
@@ -80,26 +66,10 @@
   text-decoration: underline;
 }
 
-/* contact */
-.contact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  align-items: center;
-  justify-items: start;
-  background-color: var(--background_blue);
-}
-
-.contact img {
-  justify-self: end;
-  padding: 2rem 0rem;
-}
-
-
-
 /* media queries */
 @media (max-width: 700px) {
 
+    /* main */
     .benefits {
       display: grid;
       grid-template-areas:  "cost health"
@@ -131,15 +101,7 @@
 
 @media (max-width: 500px) {
 
-  /* Header */
-  .main-header {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-    background-color: var(--background_blue);
-  }
-
+  /* header */
   .main-header .text h1, .main-header .text p{
     padding: 0rem;
     text-align: center;
@@ -151,12 +113,7 @@
     padding: 1rem;
   }
 
-  .breaking_line_top {
-    display: block;
-    margin: 1rem 0rem;
-  }
-
-
+  /* main */
   .partners ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -204,14 +161,6 @@
 
   .steps img {
     display: block;
-  }
-
-  .contact {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 1rem;
-    text-align: center;
   }
 
 
