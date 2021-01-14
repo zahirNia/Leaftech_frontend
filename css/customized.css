@@ -1,11 +1,11 @@
 /* Header */
 .main-header img {
-  padding: 2em 2em 0em 2em;
+  padding: 2rem 2rem 0rem 2rem;
   border-bottom: 0.125em solid #000000;
 }
 
-.main-header .text h1, .main-header .text p {
-  padding-right: 9em;
+.main-header .text {
+  padding-right: 9rem;
 }
 
 /* Main */
@@ -24,7 +24,7 @@
   opacity: 0.7;
   background-color: #FFFFFF;
   height: 2rem;
-  padding: 2em 2em;
+  padding: 2rem 2rem;
   }
 
 .benefits {
@@ -69,41 +69,47 @@
 /* media queries */
 @media (max-width: 700px) {
 
-    /* main */
-    .benefits {
-      display: grid;
-      grid-template-areas:  "cost health"
-                            "prestige prestige";
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 2rem;
-      justify-items: center;
-      align-items: center;
-    }
+  /*header*/
+  .main-header .text {
+    padding-right: 6rem;
+  }
 
-    .cost {
-      grid-area: cost;
-    }
+  /* main */
+  .benefits {
+    display: grid;
+    grid-template-areas:  "cost health"
+                          "prestige prestige";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
 
-    .health {
-      grid-area: health;
-    }
+  .cost {
+    grid-area: cost;
+  }
 
-    .prestige {
-      grid-area: prestige;
-    }
+  .health {
+    grid-area: health;
+  }
 
-    .benefit {
-      text-align: center;
-      padding: 2rem;
-    }
+  .prestige {
+    grid-area: prestige;
+  }
+
+  .benefit {
+    text-align: center;
+    padding: 2rem;
+  }
 
   }
 
 @media (max-width: 500px) {
 
   /* header */
-  .main-header .text h1, .main-header .text p{
-    padding: 0rem;
+  .main-header .text {
+    padding: 1rem 3rem;
+    margin: 0 auto;
     text-align: center;
   }
 
