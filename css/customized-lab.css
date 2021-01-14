@@ -1,133 +1,40 @@
-/* HTML structure with CSS grid */
-
-/* Comment: forming the body grid container */
-.wrapper{
-  display: grid;
-  grid-template:"logo logo logo navigator navigator navigator" auto
-                "title_txt title_txt title_txt title_img title_img title_img" auto
-                "breaking_line breaking_line breaking_line breaking_line breaking_line breaking_line" auto
-                "IP_img IP_img IP_img IP_txt IP_txt IP_txt" auto
-                "CS_txt CS_txt CS_txt CS_img CS_img CS_img" auto
-                "WPA_img WPA_img WPA_img WPA_txt WPA_txt WPA_txt" auto
-                "PV_txt PV_txt PV_txt PV_img PV_img PV_img" auto
-                "FIA_img FIA_img FIA_img FIA_txt FIA_txt FIA_txt" auto
-                "contact_img contact_img contact_img contact_txt contact_txt contact_txt" auto
-                "breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot breaking_line_bot" auto
-                "footer_logo footer_home footer_services footer_lab footer_lab_ext footer_socialmedia" auto
-                "breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp breaking_line_imp" auto
-                ". . imprint_privacy imprint_terms . imprint_copyright" auto
-                /1fr 1fr 1fr 1fr 1fr 1fr;
-  max-width: 1400px;
-  min-width: 1000px;
-  margin: 0 auto;
+/* Header */
+.main-header img {
+  padding: 2rem 2rem 0rem 2rem;
+  border-bottom: 0.25rem solid #000000;
 }
 
-.logo{
-  grid-area: logo;
-  padding: 3rem 3rem 3rem 6rem;
-
+.main-header .text h1, .main-header .text p {
+  padding-right: 3rem;
 }
 
-.main-nav{
-  grid-area: navigator;
+/* Main */
+
+
+/* media queries */
+@media (max-width: 900px) {
+
+  /* header */
+  .main-header .text h1, .main-header .text p{
+    padding: 0rem;
+  }
 }
 
-ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+@media (max-width: 500px) {
+
+  /* header */
+  .main-header .text h1, .main-header .text p{
+    text-align: center;
+  }
+
+  .main-header .text button {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }
 
-ul li {
-  float: left;
-}
-
-.main-nav nav ul li a {
-  display: block;
-  color: #352917;
-  font-family: Nunito;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
-}
-
-.main-nav nav ul li .active {
-  display: block;
-  color: #4989D8;
-  font-family: Nunito Sans;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
-}
-
-.main-nav nav ul li a:hover {
-  display: block;
-  color: #4989D8;
-  font-family: Nunito Sans;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 3rem 3rem 3rem 0rem;
-}
-
-.title_img{
-  grid-area: title_img;
-  justify-self: start;
-  align-self: end;
-}
-
-.title_txt {
-  grid-area: title_txt;
-  justify-self: center;
-  align-self: center;
-}
-
-h1 {
-  font-family: Exo;
-  color: #263238;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-h2, h3 {
-  font-family: Exo;
-  color: #263238;
-}
-
-p {
-  font-family: Nunito;
-  color: #778AA3;
-  font-size: 14px;
-}
-
-button {
-  height: 44px;
-  width: 180px;
-  color: #FFFFFF;
-  font-family: Nunito;
-  font-size: 15px;
-  text-align: center;
-  background-color: #3087DF;
-  /*
-  font-weight: 600;
-  box-shadow: 0 2px 9px 0 rgba(0,135,230,0.6);
-   */
-}
-
-button a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.breaking_line {
-  grid-area: breaking_line;
-  border: 0.0625rem solid #000000;
-  background-color: #000000;
-}
-
-/* innovation 1 */
+/* innovation 1
 .IP_img {
   grid-area: IP_img;
   justify-self: end;
@@ -145,7 +52,8 @@ button a {
   font-size: 14px;
   text-align: center;
 }
-/* innovation 2 */
+
+
 .CS_img {
   grid-area: CS_img;
   justify-self: start;
@@ -163,7 +71,8 @@ button a {
   font-size: 14px;
   text-align: center;
 }
-/* innovation 3 */
+
+
 .WPA_img {
   grid-area: WPA_img;
   justify-self: end;
@@ -182,7 +91,6 @@ button a {
   text-align: center;
 }
 
-/* innovation 4 */
 .PV_img {
   grid-area: PV_img;
   justify-self: start;
@@ -200,7 +108,6 @@ button a {
   font-size: 14px;
   text-align: center;
 }
-/* innovation 5 */
 .FIA_img {
   grid-area: FIA_img;
   justify-self: end;
@@ -218,105 +125,4 @@ button a {
   font-size: 14px;
   text-align: center;
 }
-
-.contact_img {
-  grid-area: contact_img;
-  justify-self: end;
-  padding: 3rem 0rem;
-  /*background-color: #B8CBE4;
-  opacity: 0.05;*/
-}
-
-.contact_txt {
-  grid-area: contact_txt;
-  padding: 0rem 6rem;
-  align-self: center;
-}
-
-.breaking_line_bot {
-  grid-area: breaking_line_bot;
-  border: 0.0625rem solid #000000;
-  background-color: #000000;
-}
-
-.footer_logo {
-  grid-area: footer_logo;
-  justify-self: center;
-  align-self: start;
-}
-
-.footer_logo img {
-  height: 25px;
-}
-
-.footer_home {
-  grid-area: footer_home;
-}
-
-.footer_services {
-  grid-area: footer_services;
-}
-
-.footer_lab {
-  grid-area: footer_lab;
-}
-
-.footer_lab_ext {
-  grid-area: footer_lab_ext;
-}
-
-.footer_socialmedia {
-  grid-area: footer_socialmedia;
-}
-
-/* Style all font awesome icons */
-.fa {
-  color: #000000;
-  font-size: 0.75rem;
-  text-align: center;
-  text-decoration: none;
-  padding-right: 1rem;
-}
-
-#home_header, #services_header, #lab_header, #footer_socialmedia_header {
-  color: #000000;
-}
-
-#lab_ext_header {
-  color: #FFFFFF;
-}
-
-.footer_home a, .footer_services a, .footer_lab a, .footer_lab_ext a {
-  color: #778AA3;
-  text-decoration: none;
-  font-size: 0.75rem;
-}
-
-.footer_logo, .footer_home, .footer_services, .footer_lab, .footer_lab_ext, .footer_socialmedia{
-  padding: 0.25rem 0rem 0.25rem 0rem;
-}
-
-.breaking_line_imp {
-  grid-area: breaking_line_imp;
-  border: 0.03125rem solid #778AA3;
-  background-color: #778AA3;
-}
-
-.imprint_privacy {
-  grid-area: imprint_privacy;
-}
-
-.imprint_terms {
-  grid-area: imprint_terms;
-}
-
-.imprint_copyright {
-  grid-area: imprint_copyright;
-}
-
-.imprint_privacy a, .imprint_terms a, .imprint_copyright p {
-  color: #778AA3;
-  font-size: 0.5rem;
-  text-decoration: none;
-}
-
+*/
