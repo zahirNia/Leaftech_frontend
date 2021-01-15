@@ -17,7 +17,13 @@ h3 {
 p {
   margin-top: 0rem;
 }
-form fieldset .personal-information {
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 3rem 0rem;
+}
+form fieldset {
   background-color: var(--background_blue);
 }
 
@@ -25,11 +31,6 @@ form fieldset label {
   font-family: var(--paragraph_font);
   font-weight: bold;
   color: #233238;
-}
-
-.newsletter {
-  color: var(--leaftech_gray);
-  font-weight: normal;
 }
 
 form fieldset input {
@@ -40,14 +41,64 @@ form fieldset input {
 
 .personal-information {
   display: grid;
+  grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  grid-column-gap: 3rem;
   justify-items: start;
   align-items: center;
-  grid-auto-flow: column;
-  background-color: var(--background_blue);
+  padding: 0rem 2rem;
+}
+
+.personal-information label {
+  padding: 2rem 0rem 0.5rem 0rem;
+
+}
+.personal-information input {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(119,138,163,0.3);
+}
+
+.newsletter {
   padding: 2rem;
 }
 
+.newsletter label{
+  color: var(--leaftech_gray);
+  font-weight: normal;
+}
+
+.services, .innovations {
+  padding: 2rem;
+}
+
+.services label, .innovations label {
+  display: block;
+  padding-bottom: 1rem;
+}
+.services input, .innovations input {
+  padding: 1rem;
+  margin: 0rem 1rem 1rem 0rem;
+  width: fit-content;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(119,138,163,0.3);
+}
+
+.message {
+  padding: 2rem;
+}
+textarea {
+  margin: 0rem 1rem 1rem 0rem;
+  width: 100%;
+  height: 5rem;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(119,138,163,0.3);
+  font-family: var(--paragraph_font);
+  color: var(--leaftech_gray);
+  opacity: 0.4;
+}
 
 /* media queries */
 @media (max-width: 700px) {

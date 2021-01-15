@@ -67,7 +67,7 @@
     <form>
       <!-- 1) Tell us about yourself -->
       <h3>1. Tell us about yourself</h3>
-      <p>In order to reply to your demand the best way, we need to get to know you a little. We offer live demo, video link, webinar, access to our case studies, etc. </p>
+      <p>In order to reply to your demand the best way, we need to get to know you a little.<br> We offer live demo, video link, webinar, access to our case studies, etc. </p>
       <fieldset class="personal-information">
         <label for="name">Name</label>
         <input name="name" id="name" type="text" value="Arthur H. Rosenfeld">
@@ -80,9 +80,11 @@
 
         <label for="role">Role</label>
         <input name="role" id="role" type="text" value="Energy commissioner"><br>
+      </fieldset>
 
+      <fieldset class="newsletter">
         <input name="newsletter" type="checkbox" id="newsletter">
-        <label for="newsletter" class="newsletter">I agree to receive updates from Leaftech by email.</label>
+        <label for="newsletter">I agree to receive updates from Leaftech by email.</label>
       </fieldset>
 
       <!-- 2) How can we help you? -->
@@ -121,7 +123,9 @@
       <h3>3. Write us a note</h3>
       <p>Let us know in more details what you're looking for, and we will prepare it for you.</p>
       <label for="message"></label>
-      <textarea name="message" id="message">Message</textarea>
+      <fieldset class="message">
+        <textarea name="message" id="message">Message</textarea>
+      </fieldset>
     </form>
 
     <!-- Footer -->
