@@ -1,7 +1,7 @@
 /* Header */
 .main-header img {
   padding: 2rem 2rem 0rem 2rem;
-  border-bottom: 0.25rem solid #000000;
+  margin-bottom: 0rem;
 }
 
 .main-header .text {
@@ -105,96 +105,3 @@
   }
 
 }
-
-/* innovation 1
-.IP_img {
-  grid-area: IP_img;
-  justify-self: end;
-  padding-right: 10rem;
-}
-
-.IP_txt {
-  grid-area: IP_txt;
-  padding-right: 10rem;
-}
-
-.IP_txt a {
-  color: #3087DF;
-  font-family: "Nunito Sans";
-  font-size: 14px;
-  text-align: center;
-}
-
-
-.CS_img {
-  grid-area: CS_img;
-  justify-self: start;
-  padding-left: 10rem;
-}
-
-.CS_txt {
-  grid-area: CS_txt;
-  padding-left: 10rem;
-}
-
-.CS_txt a {
-  color: #3087DF;
-  font-family: "Nunito Sans";
-  font-size: 14px;
-  text-align: center;
-}
-
-
-.WPA_img {
-  grid-area: WPA_img;
-  justify-self: end;
-  padding-right: 10rem;
-}
-
-.WPA_txt {
-  grid-area: WPA_txt;
-  padding-right: 10rem;
-}
-
-.WPA_txt a {
-  color: #3087DF;
-  font-family: "Nunito Sans";
-  font-size: 14px;
-  text-align: center;
-}
-
-.PV_img {
-  grid-area: PV_img;
-  justify-self: start;
-  padding-left: 10rem;
-}
-
-.PV_txt {
-  grid-area: PV_txt;
-  padding-left: 10rem;
-}
-
-.PV_txt a {
-  color: #3087DF;
-  font-family: "Nunito Sans";
-  font-size: 14px;
-  text-align: center;
-}
-.FIA_img {
-  grid-area: FIA_img;
-  justify-self: end;
-  padding-right: 10rem;
-}
-
-.FIA_txt {
-  grid-area: FIA_txt;
-  padding-right: 10rem;
-}
-
-.FIA_txt a {
-  color: #3087DF;
-  font-family: "Nunito Sans";
-  font-size: 14px;
-  text-align: center;
-}
-*/

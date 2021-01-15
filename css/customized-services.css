@@ -1,6 +1,7 @@
 /* header */
 .main-header img {
   padding: 2rem 2rem 0rem 2rem;
+  margin-bottom: 0rem;
 }
 
 .main-header .text {
