@@ -23,6 +23,7 @@ form {
   margin: 0 auto;
   padding: 3rem 0rem;
 }
+
 form fieldset {
   background-color: var(--background_blue);
 }
@@ -122,7 +123,11 @@ button {
 
 /* media queries */
 @media (max-width: 700px) {
-
+  form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem 0rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -134,6 +139,12 @@ button {
 
   .main-header img {
     display: none;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0rem;
   }
 
 }
