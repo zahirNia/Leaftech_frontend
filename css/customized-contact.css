@@ -147,4 +147,11 @@ button {
     padding: 3rem 0rem;
   }
 
+
+.personal-information {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: 1fr;
+  }
+
 }
