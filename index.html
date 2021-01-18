@@ -67,11 +67,13 @@
       <!-- Partner logo list -->
       <ul>
         <li><a id = "Climate-KIC", href="https://www.climate-kic.org/"><img src="assets/Logos/Partners%20logos/Monochrome/Climate_Kic_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
+        <li class="responsive-hidden"><a id = "Dena", href="https://www.dena.de/en/home/"><img src="assets/Logos/Partners%20logos/Monochrome/Dena_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
         <li class="responsive-hidden"><a id = "Deneff", href="https://www.deneff.org/"><img src="assets/Logos/Partners%20logos/Monochrome/Deneff_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
         <li><a id = "IBB", href="https://www.ibb.de/de/startseite/startseite.html"><img src="assets/Logos/Partners%20logos/Monochrome/Investition%20bank%20Berlin%20_%20logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
         <li><a id = "Dreso", href="https://www.dreso.com/de/"><img src="assets/Logos/Partners%20logos/Monochrome/Drees-und-sommer_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
         <li class="responsive-hidden"><a id = "Mujinzo", href="http://www.mujinzo-labs.com/en/"><img src="assets/Logos/Partners%20logos/Monochrome/Mujinzolabs_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
         <li class="responsive-hidden"><a id = "Telekom", href="https://telekomhilft.telekom.de/t5/TechBoost-EN/ct-p/TechBoost_en"><img src="assets/Logos/Partners%20logos/Monochrome/Techboost_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
+        <li class="responsive-hidden"><a id = "Smart-Green", href="https://smartgreen-accelerator.de/"><img src="assets/Logos/Partners%20logos/Monochrome/Smartgreen_logo@2x.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a></li>
       </ul>
     </section>
 
@@ -206,11 +208,13 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-    <!-- JS-->
+    <!-- functions -->
     <script>
       function hover(element) {
         if (element.parentElement.id === "Climate-KIC") {
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Climate_Kic_logo@2x.png')}
+        else if (element.parentElement.id === "Dena") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Dena_logo@2x.png')}
         else if (element.parentElement.id === "Deneff") {
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Deneff_logo@2x.png')}
         else if (element.parentElement.id === "IBB") {
@@ -221,6 +225,8 @@
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Mujinzolabs_logo@2x.png')}
         else if (element.parentElement.id === "Telekom") {
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Techboost_logo@2x.png')}
+        else if (element.parentElement.id === "Smart-Green") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Color_Active/Smartgreen_logo@2x.png')}
         else if (element.parentElement.id === "Facebook") {
           element.setAttribute('src', 'assets/Social%20Icons/Facebook%20Logo_active%20hover.svg')}
         else if (element.parentElement.id === "Twitter") {
@@ -233,6 +239,8 @@
       function unhover(element) {
         if (element.parentElement.id === "Climate-KIC") {
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Climate_Kic_logo@2x.png')}
+        else if (element.parentElement.id === "Dena") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Dena_logo@2x.png')}
         else if (element.parentElement.id === "Deneff") {
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Deneff_logo@2x.png')}
         else if (element.parentElement.id === "IBB") {
@@ -243,6 +251,8 @@
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Mujinzolabs_logo@2x.png')}
         else if (element.parentElement.id === "Telekom") {
           element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Techboost_logo@2x.png')}
+        else if (element.parentElement.id === "Smart-Green") {
+          element.setAttribute('src', 'assets/Logos/Partners%20logos/Monochrome/Smartgreen_logo@2x.png')}
         else if (element.parentElement.id === "Facebook") {
           element.setAttribute('src', 'assets/Social%20Icons/Facebook%20Logo.svg')}
         else if (element.parentElement.id === "Twitter") {

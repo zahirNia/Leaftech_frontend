@@ -70,16 +70,16 @@
       <p>In order to reply to your demand the best way, we need to get to know you a little.<br> We offer live demo, video link, webinar, access to our case studies, etc. </p>
       <fieldset class="personal-information">
         <label for="name">Name</label>
-        <input name="name" id="name" type="text" value="Arthur H. Rosenfeld">
+        <input name="name" id="name" type="text" value="Arthur H. Rosenfeld" onclick="eliminator(this)">
 
         <label for="Email">Email address</label>
-        <input name="Email" id="Email" type="text" value="arthur.h.rosenfeld@energysavings.com">
+        <input name="Email" id="Email" type="text" value="arthur.h.rosenfeld@energysavings.com" onclick="eliminator(this)">
 
         <label for="company">Company</label>
-        <input name="company" id="company" type="text" value="University of California Berkley">
+        <input name="company" id="company" type="text" value="University of California Berkley" onclick="eliminator(this)">
 
         <label for="role">Role</label>
-        <input name="role" id="role" type="text" value="Energy commissioner"><br>
+        <input name="role" id="role" type="text" value="Energy commissioner" onclick="eliminator(this)"><br>
       </fieldset>
 
       <fieldset class="newsletter">
@@ -92,40 +92,43 @@
       <p>Select what you are interested in (optional)</p>
 
       <fieldset class="services">
-        <label for="SA">Services</label>
-        <input name="feature" id="SA" type="button" value="Shading automation">
+        <p><strong>Services</strong></p>
+        <input name="SA" id="SA" type="checkbox" class="hidden" checked="True">
+        <label for="SA">Shading automation</label>
 
-        <label for="SRF" class="hidden"></label>
-        <input name="SRF" id="SRF" type="button" value="Single room forecast">
+        <input name="SRF" id="SRF" type="checkbox" class="hidden">
+        <label for="SRF">Single room forecast</label>
 
-        <label for="BEF" class="hidden"></label>
-        <input name="BEF" id="BEF" type="button" value="Building energy forecast">
+        <input name="BEF" id="BEF" type="checkbox" class="hidden">
+        <label for="BEF">Building energy forecast</label>
       </fieldset>
 
       <fieldset class="innovations">
-        <label for="IP">The Lab</label>
-        <input name="IP" id="IP" type="button" value="Improved planning">
+        <p><strong>The Lab</strong></p>
+        <input name="IP" id="IP" type="checkbox" class="hidden">
+        <label for="IP">Improved planning</label>
 
-        <label for="CS" class="hidden"></label>
-        <input name="CS" id="CS" type="button" value="Certification support">
+        <input name="CS" id="CS" type="checkbox" class="hidden">
+        <label for="CS">Certification support</label>
 
-        <label for="PV" class="hidden"></label>
-        <input name="PV" id="PV" type="button" value="Photovoltaics">
+        <input name="PV" id="PV" type="checkbox" class="hidden">
+        <label for="PV">Photovoltaics</label>
 
-        <label for="WPA" class="hidden"></label>
-        <input name="WPA" id="WPA" type="button" value="Wind profile analysis">
+        <input name="WPA" id="WPA" type="checkbox" class="hidden">
+        <label for="WPA">Wind profile analysis</label>
 
-        <label for="FIA" class="hidden"></label>
-        <input name="FIA" id="FIA" type="button" value="Feedback and Info App">
+        <input name="FIA" id="FIA" type="checkbox" class="hidden">
+        <label for="FIA">Feedback and Info App</label>
       </fieldset>
 
       <!-- 3) Write us a note -->
       <h3>3. Write us a note</h3>
       <p>Let us know in more details what you're looking for, and we will prepare it for you.</p>
-      <label for="message"></label>
       <fieldset class="message">
+        <label for="message"></label>
         <textarea name="message" id="message">Message</textarea>
       </fieldset>
+      <button type="submit">Send Request</button>
     </form>
 
     <!-- Footer -->
@@ -200,6 +203,13 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <!-- functions -->
+  <script>
+    function eliminator(element) {
+      element.value = "";
+    }
+  </script>
 
 </body>
 
