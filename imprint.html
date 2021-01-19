@@ -9,12 +9,17 @@
 
   <link rel="manifest" href="site.webmanifest"> <!-- why this?? -->
   <link rel="apple-touch-icon" href="icon.png"> <!-- why this?? -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito"> <!-- Googlefonts- Nunito -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo"> <!-- Googlefonts- Exo -->
+
+  <!-- Googlefonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600;800&display=swap" rel="stylesheet"> <!-- Googlefonts- Exo -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- Googlefonts- Nunito -->
+
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/leaftech-standard.css">
   <link rel="stylesheet" href="css/customized-imprint.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -28,15 +33,14 @@
     <![endif]-->
 
   <div class="wrapper">
-   <!-- Add your site or application content here -->
-    <div class="logo">
-      <!-- Leaftech Logo -->
-      <img src="img/LT-logo.jpg" alt="Leaftech's Logo" width="90">
-    </div>
 
-    <div class="navigator">
+    <!-- top of the page -->
+    <section class="navigator">
+      <!-- Logo -->
+      <img src="assets/Logos/Leaftech%20logo/LEAFTECH-removebg-preview.png" alt="Leaftech's Logo">
+
       <!-- navigation bar -->
-      <nav>
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="services.html">Services</a></li>
@@ -44,29 +48,23 @@
           <li><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
-    </div>
+    </section>
 
-    <!-- The solution => The what-->
-    <div class="title_img">
+    <!-- Header- The solution => The what -->
+    <header class="main-header">
       <!-- Leaftech Logo -->
-      <img src="img/Mailbox-bro.svg" alt="Contact us">
-    </div>
+      <img src="assets/img/Building-bro.svg" alt="Target smart building" class="responsive-hidden">
 
-    <!-- The solution => The what-->
-    <div class="title_txt">
-      <h2>Impressum</h2>
-      <p><strong>Angaben gemäß § 5 TMG</strong></p>
-      <p>LeafTech GmbH</p>
-      <p>Am krögel 2</p>
-      <p>10179 Berlin</p>
-    </div>
+      <!-- The solution => The what -->
+      <div class="text">
+        <h1>Impressum</h1>
+        <p><strong>Angaben gemäß § 5 TMG</strong></p>
+        <p>LeafTech GmbH</p>
+        <p>Am krögel 2<br>10179 Berlin</p>
+      </div>
+    </header>
 
-    <!-- Breaking line-->
-    <div class="breaking_line_top">
-    </div>
-
-    <div class="imprint">
-
+    <article class="imprint-info">
       <h2>Handelsregister</h2>
       <p>Handelsregister: HRB 193594 B</p>
       <p>Registergericht: Amtsgericht Charlottenburg</p>
@@ -90,92 +88,63 @@
       <h2>Quelle</h2>
       <p>e-recht24.de</p>
 
-    </div>
-
-    <!-- contact us-->
-    <div class="contact_img">
-      <img src="img/Hello-bro.svg" alt="contact us">
-    </div>
-
-    <div class="contact_txt">
-      <h2>Would you like to become a partner</h2>
-      <p>If you have interest, or would like to receive more information feel free to contact us.</p>
-      <button type="button"><a href="mailto:contact@leaftech.eu">Contact us</a></button>
-    </div>
-
-    <!-- Breaking line-->
-    <div class="breaking_line_bot">
-    </div>
+    </article>
 
     <!-- Footer -->
-    <div class="footer_logo">
-      <a href="https://www.autodesk.com/"><img src="img/fujitsu-logo.jpg"></a>
-    </div>
+    <footer class="responsive-hidden">
+      <section class="footer_logo">
+        <a href="index.html"><img src="assets/Logos/Leaftech%20logo/LEAFTECH-removebg-preview.png"></a>
+      </section>
 
-    <div class="footer_home">
-      <!-- Partner logo list -->
-      <p>
-        <a href="index.html" id="home_header"><b>Home</b></a>
-      </p>
-    </div>
+      <section class="footer_home">
+        <!-- Partner logo list -->
+        <h3><a href="index.html">Home</a></h3>
+      </section>
 
-    <div class="footer_services">
-      <p>
-        <a href="services.html" id="services_header"><b>Services</b></a>
-      </p>
-      <p>
-        <a href="services.html#SA">Shading automation</a><br>
-        <a href="services.html#SRF">Single room forecast</a><br>
-        <a href="services.html#BEF">Building energy forecast</a>
-      </p>
-    </div>
+      <section class="footer_services">
+        <h3><a href="services.html">Services</a></h3>
+        <ul>
+          <li><a href="services.html#SA">Shading automation</a></li>
+          <li><a href="services.html#SRF">Single room forecast</a></li>
+          <li><a href="services.html#BEF">Building energy forecast</a></li>
+        </ul>
+      </section>
 
-    <div class="footer_lab">
-      <p>
-        <a href="lab.html" id="lab_header"><b>The Lab</b></a>
-      </p>
-      <p>
-        <a href="lab.html#PV">Photovoltaic</a><br>
-        <a href="lab.html#IP">Improved planning</a><br>
-        <a href="lab.html#CS">Certification support</a>
-      </p>
-    </div>
+      <section class="footer_lab">
+        <h3><a href="lab.html">The Lab</a></h3>
+        <ul>
+          <li><a href="lab.html#PV">Photovoltaic</a></li>
+          <li><a href="lab.html#IP">Improved planning</a></li>
+          <li><a href="lab.html#CS">Certification support</a></li>
+          <li><a href="lab.html#WPA">Wind profile analysis</a></li>
+          <li><a href="lab.html#FIA">Feedback and Info App</a></li>
+        </ul>
+      </section>
 
-    <div class="footer_lab_ext">
-      <p id="lab_ext_header">
-        <b>The Lab</b>
-      </p>
-      <p>
-        <a href="lab.html#WPA">Wind profile analysis</a><br>
-        <a href="lab.html#FIA">Feedback and Info App</a>
-      </p>
-    </div>
+      <section class="footer_media">
+        <h3><a>Follow us</a></h3>
+        <ul>
+          <li><a id = "Facebook", href="https://www.facebook.com/leaftech.gmbh"><img src="assets/Social%20Icons/Facebook%20Logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
+          <li><a id = "Twitter", href="https://twitter.com/leaftech_twitt?lang=en"><img src="assets/Social%20Icons/Twitter_Logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
+          <li><a id = "Linkedin", href="https://www.linkedin.com/company/leaftech"><img src="assets/Social%20Icons/Linkedin%20logo.svg" onmouseover="hover(this)" onmouseleave="unhover(this)"></a></li>
+        </ul>
+      </section>
+    </footer>
 
-    <div class="footer_socialmedia">
-      <p id="footer_socialmedia_header"><b>Follow us</b></p>
-      <p>
-        <a href="https://www.facebook.com/leaftech.gmbh" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/leaftech_twitt?lang=en" class="fa fa-twitter"></a>
-        <a href="https://www.linkedin.com/company/leaftech" class="fa fa-linkedin"></a>
-      </p>
-    </div>
+    <!-- imprint-->
+    <section class="imprint">
+      <div class="imprint_privacy">
+        <a href="imprint.html">Privacy policy & Terms of services</a>
+      </div>
 
+      <div class="imprint_acknowledgement">
+        <a href="https://www.freepik.com">Illustrations by www.freepik.com</a>
+      </div>
 
-    <!-- Breaking line-->
-    <div class="breaking_line_imp">
-    </div>
-
-    <div class="imprint_privacy">
-      <a href="imprint.html">Privacy Policy</a>
-    </div>
-
-    <div class="imprint_terms">
-      <a href="imprint.html">Terms of service</a>
-    </div>
-
-    <div class="imprint_copyright">
-      <p>Copyright 2020 Leaftech GmbH</p>
-    </div>
+      <div class="imprint_copyright">
+        <p>Copyright 2020 Leaftech GmbH</p>
+      </div>
+    </section>
 
   </div>
 
