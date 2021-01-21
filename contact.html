@@ -64,22 +64,22 @@
     </header>
 
     <!-- Form -->
-        <form action="contact.html" method="get">
+    <form action="contact.html" method="get">
       <!-- 1) Tell us about yourself -->
       <h3>1. Tell us about yourself</h3>
       <p>In order to reply to your demand the best way, we need to get to know you a little.<br> We offer live demo, video link, webinar, access to our case studies, etc. </p>
       <fieldset class="personal-information">
         <label for="name">Name</label>
-        <input name="name" id="name" type="text" value="Arthur H. Rosenfeld" onclick="eliminator(this)">
+        <input name="name" id="name" type="text" value="Arthur H. Rosenfeld" onclick="eliminator(this)" required>
 
         <label for="Email">Email address</label>
-        <input name="Email" id="Email" type="text" value="arthur.h.rosenfeld@energysavings.com" onclick="eliminator(this)">
+        <input name="Email" id="Email" type="text" value="arthur.h.rosenfeld@energysavings.com" onclick="eliminator(this)" required>
 
         <label for="company">Company</label>
-        <input name="company" id="company" type="text" value="University of California Berkley" onclick="eliminator(this)">
+        <input name="company" id="company" type="text" value="University of California Berkley" onclick="eliminator(this)" required>
 
         <label for="role">Role</label>
-        <input name="role" id="role" type="text" value="Energy commissioner" onclick="eliminator(this)"><br>
+        <input name="role" id="role" type="text" value="Energy commissioner" onclick="eliminator(this)" required><br>
       </fieldset>
 
       <fieldset class="newsletter">
