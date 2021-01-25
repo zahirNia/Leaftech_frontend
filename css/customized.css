@@ -5,7 +5,12 @@
 }
 
 .main-header .text {
-  padding-right: 9rem;
+  max-width: 30rem;
+  justify-self: start;
+}
+
+.main-header .text p {
+  padding-bottom: 1rem;
 }
 
 /* Main */
@@ -22,7 +27,6 @@
 
 .partners ul li a img {
   display: block;
-  opacity: 0.7;
   background-color: #FFFFFF;
   height: 2rem;
   }
@@ -30,14 +34,30 @@
 .benefits {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
   background-color: var(--background_blue);
   justify-items: start;
 }
 
 .benefit {
   text-align: left;
+}
+
+.cost {
+  justify-self: end;
+  padding: 2rem 2rem 2rem 5rem;
+}
+
+.health {
+  justify-self: center;
   padding: 2rem;
+}
+
+.prestige {
+  padding: 2rem 5rem 2rem 2rem;
+}
+
+.benefit p {
+  max-width: 20rem;
 }
 
 .sticky {
@@ -55,12 +75,21 @@
 .steps h1 {
   padding-top: 3rem;
   margin-bottom: 0rem;
+  color: #263238;
+}
+
+.bigger {
+  font-size: 1.3rem;
+}
+
+.hyphen-limiter {
+  max-width: 50rem;
 }
 
 .steps a {
   display: block;
   font-family: var(--paragraph_font);
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1.075em;
   color: var(--leaftech_blue);
   text-decoration: underline;
