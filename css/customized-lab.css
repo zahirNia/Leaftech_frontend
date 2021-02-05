@@ -9,13 +9,19 @@
   padding-left: 6rem;
 }
 
+.main-header .text button {
+  margin-top: 1rem;
+}
+
 /* Main */
 .odd {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 3rem;
   align-items: center;
-  justify-items: center;
+  justify-items: start;
+  max-width: 60%;
+  margin: 3rem auto;
 }
 
 .even {
@@ -23,24 +29,22 @@
   grid-template-columns: 1fr auto;
   grid-gap: 3rem;
   align-items: center;
-  justify-items: center;
+  justify-items: start;
+  max-width: 60%;
+  margin: 3rem auto;
 }
 
 .innovation img {
-  padding: 2rem 0rem;
-}
-
-.innovation .explanation {
-  min-width: 20rem;
-  max-width: 60%;
+  padding: 0rem;
 }
 
 .innovation .explanation p a {
   text-decoration: underline;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--leaftech_blue);
 }
 
+/*
 .odd .explanation {
   justify-self: start;
 }
@@ -56,6 +60,7 @@
 .even img {
   padding-right: 15vw;
 }
+*/
 
 .contact {
   grid-gap: 3rem;

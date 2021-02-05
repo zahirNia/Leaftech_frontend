@@ -7,6 +7,7 @@
   --paragraph_font: Nunito Sans;
   --border_black: 0.20rem solid #263238;
   --border_gray: 0.10rem solid #778AA3;
+  --title_black: #263238;
 }
 
 /* Global settings */
@@ -18,34 +19,34 @@ body {}
 
 h1 {
   font-family: var(--heading_font);
-  font-weight: bold;
-  color: #2F2F2F;
+  font-weight: 600;
+  color: var(--title_black);
   font-size: 2.3rem;
 }
 
 h2 {
   font-family: var(--heading_font);
   font-weight: 600;
+  color: var(--title_black);
   font-size: 2em;
 }
 
 h3 {
   font-family: var(--heading_font);
   font-weight: 600;
+  color: var(--title_black);
   font-size: 1.5em;
 }
 
 p {
   font-family: var(--paragraph_font);
   font-weight: 400;
-  font-size: 1rem;
   color: var(--leaftech_gray);
 }
 
 span {
   font-family: var(--paragraph_font);
   font-weight: 400;
-  font-size: 1rem;
   color: var(--leaftech_gray);
 }
 
@@ -86,7 +87,6 @@ button a {
 }
 
 .navigator img {
-  height: 3rem;
   justify-self: start;
   padding-left: 25%;
 }
@@ -102,7 +102,7 @@ button a {
   justify-self: center;
   text-align: center;
   padding-inline-start: 0rem;
-  padding: 0rem 3rem;
+  padding: 0rem 5rem;
 }
 
 .main-nav ul li a {
@@ -195,28 +195,26 @@ footer {
 }
 
 .footer_logo img {
-  height: 3rem;
-  padding-top: 1rem;
+  height: 1rem;
+  padding-top: 1.5rem;
 }
 
 .footer_home h3, .footer_services h3, .footer_lab h3, .footer_media h3 {
   font-family: var(--heading_font);
   margin: 0rem;
-  line-height: 36px;
   padding-top: 1rem;
 }
 
 .footer_home h3 a, .footer_services h3 a, .footer_lab h3 a, .footer_media h3 a {
   font-family: var(--paragraph_font);
   color: #000000;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: bold;
   text-decoration: none;
 }
 
 .footer_home h3 a:hover, .footer_services h3 a:hover, .footer_lab h3 a:hover {
   color: var(--leaftech_blue);
-  font-size: 0.625rem;
 }
 
 .footer_services ul, .footer_lab ul, .footer_media ul {
@@ -229,13 +227,12 @@ footer {
 .footer_home ul li a, .footer_services ul li a, .footer_lab ul li a {
   font-family: var(--paragraph_font);
   color: var(--leaftech_gray);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   text-decoration: none;
 }
 
 .footer_home ul li a:hover, .footer_services ul li a:hover, .footer_lab ul li a:hover {
   color: var(--leaftech_blue);
-  font-size: 0.625rem;
 }
 
 .footer_media ul li {
@@ -255,23 +252,23 @@ footer {
 
 .imprint_privacy {
   grid-area: imprint_privacy;
-  padding: 0.5em 0em;
+  padding: 0.5rem 0rem;
 }
 
 .imprint_acknowledgement {
   grid-area: imprint_acknowledgement;
-  padding: 0.5em 0em;
+  padding: 0.5rem 0rem;
 }
 
 .imprint_copyright {
   grid-area: imprint_copyright;
-  padding: 0.5em 0em;
+  padding: 0.5rem 0rem;
 }
 
 .imprint_privacy a, .imprint_acknowledgement a, .imprint_copyright p {
   color: var(--leaftech_gray);
   font-family: var(--paragraph_font);
-  font-size: 0.625em;
+  font-size: 0.75rem;
   text-decoration: none;
 }
 

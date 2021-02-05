@@ -50,6 +50,62 @@ article {
   margin: 0rem 0rem 0.25rem 0rem;
 }
 
+#SRF .title {
+  display: grid;
+  grid-template-areas:
+    "H1 H1"
+    "Span A";
+  align-items: center;
+}
+
+#SRF .title .H1 {
+  grid-area: H1;
+}
+
+#SRF .title .Span {
+  grid-area: Span;
+  justify-self: end;
+  margin-top: 0.40rem;
+}
+
+#SRF .title .A {
+  grid-area: A;
+  justify-self: start;
+  margin: 0rem;
+}
+
+#SRF .title img {
+  margin: 0rem;
+}
+
+#BEF .title {
+  display: grid;
+  grid-template-areas:
+    "H1 H1"
+    "Span A";
+  align-items: center;
+}
+
+#BEF .title .H1 {
+  grid-area: H1;
+}
+
+#BEF .title .Span {
+  grid-area: Span;
+  justify-self: end;
+  margin-top: 0.15rem;
+}
+
+#BEF .title .A {
+  grid-area: A;
+  justify-self: start;
+  margin: 0rem;
+}
+
+#BEF .title img {
+  margin: 0rem;
+}
+
 .illustration {
   grid-area: illustration;
   padding: 3rem 0rem 6rem 0rem;
@@ -60,7 +116,7 @@ article {
 }
 
 .kinda-long {
-  max-width: 35rem;
+  max-width: 30rem;
 }
 
 .description {
@@ -92,15 +148,15 @@ ul.dashed {
 }
 
 ul.dashed > li {
-  margin-left: 1rem;
   font-family: var(--paragraph_font);
   color: var(--leaftech_gray);
+  margin-bottom: 0.5rem;
 }
 
 /* Prevent nested li's from getting messed up */
 ul.dashed > li::before {
   content: "-";
-  margin-left: 0rem;
+  margin-right: 0.5rem;
 }
 
 .lead {

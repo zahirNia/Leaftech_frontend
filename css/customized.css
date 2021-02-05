@@ -57,7 +57,11 @@
 }
 
 .benefit p {
-  max-width: 20rem;
+  max-width: 22rem;
+}
+
+.prestige p {
+  max-width: 24rem;
 }
 
 .sticky {
@@ -69,17 +73,24 @@
   justify-items: center;
   align-items: center;
   text-align: center;
-  padding: 0rem 18rem 3rem;
+  padding: 0rem 10rem 3rem;
 }
 
-.steps h1 {
+.steps > h1 {
   padding-top: 3rem;
   margin-bottom: 0rem;
-  color: #263238;
+}
+
+.margin-bot {
+  margin-bottom: 2rem;
 }
 
 .bigger {
   font-size: 1.3rem;
+}
+
+.steps > h3 {
+  margin-top: 0.5rem;
 }
 
 .hyphen-limiter {
