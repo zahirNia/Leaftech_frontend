@@ -127,7 +127,8 @@ form fieldset {
 }
 
 button {
-  margin: 2rem;
+  margin-top: 2rem;
+  float: right;
 }
 
 /* media queries */
