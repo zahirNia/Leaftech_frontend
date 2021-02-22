@@ -38,6 +38,10 @@
   justify-items: start;
 }
 
+.benefits img {
+  height: 13rem;
+}
+
 .benefit {
   text-align: left;
 }

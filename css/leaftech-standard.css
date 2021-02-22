@@ -28,14 +28,14 @@ h2 {
   font-family: var(--heading_font);
   font-weight: 600;
   color: var(--title_black);
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 h3 {
   font-family: var(--heading_font);
   font-weight: 600;
   color: var(--title_black);
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 p {
@@ -71,7 +71,6 @@ button a {
 /* Wrapper */
 .wrapper{
   display: grid;
-  max-width: 1400px;
   margin: 0 auto;
 }
 
