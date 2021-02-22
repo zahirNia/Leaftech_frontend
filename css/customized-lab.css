@@ -36,6 +36,7 @@
 
 .innovation img {
   padding: 0rem;
+  width: 16rem;
 }
 
 .innovation .explanation p a {
@@ -44,26 +45,8 @@
   color: var(--leaftech_blue);
 }
 
-/*
-.odd .explanation {
-  justify-self: start;
-}
-
-.even .explanation {
-  justify-self: end;
-}
-
-.odd img {
-  padding-left: 30vw;
-}
-
-.even img {
-  padding-right: 15vw;
-}
-*/
-
-.contact {
-  grid-gap: 3rem;
+.right-fixed {
+  margin-left: 20%;
 }
 
 /* media queries */
