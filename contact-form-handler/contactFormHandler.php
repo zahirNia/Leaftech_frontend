@@ -32,3 +32,13 @@ $smoothMailer->sendTemplatedEmail(
   $params,
   'New email from the website contact form'
 );
+
+print '
+<html>
+<title>Message sent!</title>
+<body style="text-align: center">
+  <h2>Thank you!</h2>
+  <h3>Your message has been successfully sent. We will contact you very soon!</h3>
+</body>
+</html>
+';
