@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\SMTP;
 
 class SimpleMailer
 {
-  private const LOG_FILE_PATH = __DIR__ . 'logs/mailer.log';
+  private const LOG_FILE_PATH = __DIR__ . '/../../../logs/mailer.log';
 
   private PHPMailer $phpMailer;
   private Engine $templateEngine;
@@ -35,8 +35,8 @@ class SimpleMailer
     $this->phpMailer->SMTPSecure = getenv('SMTP_ENCRYPTION_TYPE');
 
     // Create a logger
-    $logger = new Logger('default');
-    $logger->pushHandler(new StreamHandler(self::LOG_FILE_PATH, Logger::NOTICE));
+    $this->logger = new Logger('default');
+    $this->logger->pushHandler(new StreamHandler(self::LOG_FILE_PATH, Logger::NOTICE));
 
     // Init Latte template engine
     $this->templateEngine = new Engine();

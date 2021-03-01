@@ -1,5 +1,14 @@
+### Content
 This repo contains the new Website files.
 It includes also a PHP mailer script.
 
-Requirements:
-  - PHP version > 7.0
+### How to update the webiste
+Run
+
+```make update```
+
+the command will `git pull` the last version from the repo, and will then run `composer install` where PHP is needed.
+
+
+### Requirements:
+  - PHP version >= 7.4
