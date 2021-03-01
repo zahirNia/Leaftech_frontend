@@ -1,0 +1,7 @@
+# By default block access to any file in this directory
+Deny From All
+
+# Except the only one that should be accessible, the target of the HTTP POST method (called in the contact form)
+<FilesMatch "^contactFormHandler\.php$">
+  Allow From All
+</FilesMatch>
