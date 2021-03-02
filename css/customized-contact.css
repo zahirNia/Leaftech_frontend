@@ -49,8 +49,7 @@ form fieldset {
 }
 .personal-information input {
   font-family: var(--paragraph_font);
-  color: var(--leaftech_gray);
-  opacity: 0.4;
+  opacity: 0.8;
   padding: 1rem;
   width: 100%;
   border: none;
@@ -97,7 +96,7 @@ form fieldset {
   display: inline-block;
   font-family: var(--paragraph_font);
   color: var(--leaftech_gray);
-  opacity: 0.4;
+  opacity: 0.8;
   font-weight: bolder;
   padding: 1rem 2rem;
   margin: 0rem 1rem 1rem 0rem;
@@ -126,8 +125,7 @@ form fieldset {
   border: none;
   box-shadow: 0 2px 4px 0 rgba(119,138,163,0.3);
   font-family: var(--paragraph_font);
-  color: var(--leaftech_gray);
-  opacity: 0.4;
+  opacity: 0.8;
   padding-top: 1rem;
   padding-left: 2rem;
 }
