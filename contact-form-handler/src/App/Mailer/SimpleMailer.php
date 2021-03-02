@@ -27,12 +27,12 @@ class SimpleMailer
     $this->phpMailer = new PHPMailer(true);
     $this->phpMailer->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose output
     $this->phpMailer->isSMTP();
-    $this->phpMailer->Host = getenv('SMTP_HOST');
-    $this->phpMailer->Port = getenv('SMTP_PORT');
+    $this->phpMailer->Host = env('SMTP_HOST');
+    $this->phpMailer->Port = env('SMTP_PORT');
     $this->phpMailer->SMTPAuth = true;
-    $this->phpMailer->Username = getenv('SMTP_USERNAME');
-    $this->phpMailer->Password = getenv('SMTP_PASSWORD');
-    $this->phpMailer->SMTPSecure = getenv('SMTP_ENCRYPTION_TYPE');
+    $this->phpMailer->Username = env('SMTP_USERNAME');
+    $this->phpMailer->Password = env('SMTP_PASSWORD');
+    $this->phpMailer->SMTPSecure = env('SMTP_ENCRYPTION_TYPE');
 
     // Create a logger
     $this->logger = new Logger('default');
@@ -43,14 +43,16 @@ class SimpleMailer
     $this->templateEngine->setTempDirectory('/tmp/latte-cached-templates/');
   }
 
-  public function sendTemplatedEmail(string $templateName, array $params, string $subject): void
+  public function sendTemplatedEmail(string $templateName, array $params, string $subject): bool
   {
     $renderedTemplate = $this->templateEngine->renderToString($templateName, ['params' => $params]);
 
+
+
     try {
       // Recipients
-      $this->phpMailer->setFrom(getenv('EMAIL_FROM_ADDRESS'));
-      $this->phpMailer->addAddress(getenv('EMAIL_RECIPIENT_ADDRESS'));
+      $this->phpMailer->setFrom(env('EMAIL_FROM_ADDRESS'));
+      $this->phpMailer->addAddress(env('EMAIL_RECIPIENT_ADDRESS'));
 
       // Content
       $this->phpMailer->isHTML(true);
@@ -69,8 +71,11 @@ class SimpleMailer
           'postData' => $_POST,
         ]
       );
+
+      return false;
     }
 
+    return true;
   }
 
 }
