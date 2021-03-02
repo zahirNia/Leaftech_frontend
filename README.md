@@ -2,7 +2,7 @@
 This repo contains the new Website files.
 It includes also a PHP mailer script.
 
-### How to update the webiste
+### How to update the website
 Run
 
 ```make update```
