@@ -12,3 +12,4 @@ the command will `git pull` the last version from the repo, and will then run `c
 
 ### Requirements:
   - PHP version >= 7.4
+  - Make sure `./contact-form-handler/logs` is writable by the web user
