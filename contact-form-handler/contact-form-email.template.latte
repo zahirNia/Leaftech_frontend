@@ -4,7 +4,7 @@
 <div>
   {foreach $params as $item}
   	<p>
-  	  <b>{$item['key']}</b>: {$item['value']}
+  	  <b>{$item['key']}</b>: {$item['value']|breakLines}
     </p>
   {/foreach}
 </div>

@@ -25,7 +25,7 @@ class SimpleMailer
     $dotenv->load();
 
     $this->phpMailer = new PHPMailer(true);
-    $this->phpMailer->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose output
+    $this->phpMailer->SMTPDebug = SMTP::DEBUG_OFF;
     $this->phpMailer->isSMTP();
     $this->phpMailer->Host = env('SMTP_HOST');
     $this->phpMailer->Port = env('SMTP_PORT');
