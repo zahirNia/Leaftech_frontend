@@ -34,7 +34,7 @@ const FIELD_NAME_HONEYPOT_SPAM = 'myExtraField';
 
 // Create a logger for the messages flagged as spam
 $spamLogger = new Logger('default');
-$spamLogger->pushHandler(new StreamHandler(SPAM_LOG_FILE_PATH, Logger::NOTICE));
+$spamLogger->pushHandler(new StreamHandler(SPAM_LOG_FILE_PATH, Logger::DEBUG));
 
 // This field is invisible to the user, if it has been filled, we assume it's a bot.
 $honeypotValue = $_POST[FIELD_NAME_HONEYPOT_SPAM] ?? null;
@@ -48,7 +48,7 @@ if (!empty($honeypotValue)) {
     ]
   );
 
-  print "The delivery of your message was not possible. Reason: it seems created aut0matica11y.";
+  print "Unfortunately the delivery of your message was not possible.<br>Reason: it seems created aut0matica11y.";
   die(); // We logged the message and can quit the script.
 }
 
