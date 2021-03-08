@@ -55,6 +55,10 @@ if (!empty($honeypotValue)) {
 
 $params = [];
 foreach ($_POST as $key => $value) {
+  if ($key === FIELD_NAME_HONEYPOT_SPAM) {
+    // do not include the honeypot spam prevention value
+    continue;
+  }
   $params[] = ['key' => $key, 'value' => $value];
 }
 
