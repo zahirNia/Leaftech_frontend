@@ -170,6 +170,10 @@ button {
 
 }
 
+.myExtraField {
+  visibility: collapse;
+}
+
 /* checkbox
 .control input {
   position: absolute;
